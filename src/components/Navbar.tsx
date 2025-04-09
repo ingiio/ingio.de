@@ -32,7 +32,7 @@ export default function Navbar() {
             </a>
             
             <a
-              href="#contact" 
+              href="#consultation" 
               className="btn-primary"
             >
               {t('contact')}

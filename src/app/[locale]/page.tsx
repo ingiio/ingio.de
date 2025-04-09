@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import ConsultationSection from '@/components/ConsultationSection';
-import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 export default function HomePage() {
@@ -15,7 +14,6 @@ export default function HomePage() {
       <HeroSection />
       <ServicesSection />
       <ConsultationSection />
-      <ContactSection />
       <Footer />
     </main>
   );

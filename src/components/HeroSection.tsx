@@ -37,7 +37,7 @@ export default function HeroSection() {
                 <Link href="#services" className="btn-primary">
                   {t('buttons.services')}
                 </Link>
-                <Link href="#contact" className="btn-outline">
+                <Link href="#consultation" className="btn-outline">
                   {t('buttons.contact')}
                 </Link>
               </>
