@@ -1,0 +1,305 @@
+{
+  "hero": {
+    "title": "Stärkung Ihrer IT, ein Byte nach dem anderen",
+    "subtitle": "Professionelle IT-Dienstleistungen, Digitalisierungsberatung und KI-Workflow-Integration für kleine Unternehmen in Bayern.",
+    "buttons": {
+      "services": "Unsere Dienstleistungen",
+      "contact": "Kontakt aufnehmen"
+    }
+  },
+  "nav": {
+    "contact": "Kontakt"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Wir bieten eine Reihe von Technologiedienstleistungen an, um Ihrem Unternehmen zu helfen, in der digitalen Landschaft zu gedeihen.",
+    "learnMore": "Mehr erfahren",
+    "closeButton": "Schließen",
+    "it": {
+      "title": "IT-Infrastruktur",
+      "description": "Sichere Netzwerke, Installation und Wartung, zugeschnitten auf die Bedürfnisse Ihres Unternehmens.",
+      "features": {
+        "one": "Netzwerksicherheit & Management",
+        "two": "Hardware- & Software-Integration",
+        "three": "Proaktive Wartung & Support"
+      },
+      "details": {
+        "intro": "Ob Sie ein einzelnes Büro oder mehrere Standorte betreiben, ich kann Ihnen helfen, eine sichere, effiziente und zukunftsfähige IT-Einrichtung aufzubauen und zu pflegen.",
+        "para1": "Ich unterstütze sowohl lokale Hardware (wie Firewalls, Switches, Server und Arbeitsplatzrechner) als auch Cloud-basierte Umgebungen — einschließlich moderner Arbeitsplatzlösungen mit Microsoft Intune und Entra für Geräte- und Identitätsmanagement.",
+        "para2": "Von der sicheren Einrichtung Ihres Netzwerks, über die Integration von Software und Hardware, bis hin zur proaktiven Erhaltung gesunder Systeme — ich stelle sicher, dass Ihre Technologie Sie nicht zurückhält.",
+        "conclusion": "Lassen Sie uns Ihr Fundament solide gestalten."
+      }
+    },
+    "digital": {
+      "title": "Digitalisierung",
+      "description": "Transformieren Sie Ihre Geschäftsprozesse mit modernen digitalen Lösungen.",
+      "features": {
+        "one": "Digitale Strategieberatung",
+        "two": "Cloud-Migration & Management",
+        "three": "Workflow-Optimierung"
+      },
+      "details": {
+        "intro": "Läuft Ihr Unternehmen noch mit alten Werkzeugen, unübersichtlichen Arbeitsabläufen oder veralteten Systemen? Ich helfe kleinen Unternehmen, ihre Abläufe mit heutigen digitalen Lösungen zu modernisieren und zu vereinfachen.",
+        "listIntro": "Egal, ob Sie folgendes vorhaben:",
+        "listItems": [
+          "In die Cloud umziehen (E-Mail, Dateien, Anwendungen)",
+          "Manuelle Arbeit durch bessere Workflows reduzieren",
+          "Die Remote-Zusammenarbeit Ihres Teams verbessern"
+        ],
+        "para1": "... ich führe Sie durch die richtigen Entscheidungen und kümmere mich um die technische Seite.",
+        "para2": "Ich dränge keine Schlagworte auf — ich konzentriere mich darauf, was Ihr Unternehmen reibungsloser und sicherer laufen lässt.",
+        "conclusion": "Betrachten Sie es als ein digitales Tuning mit langfristigem Wert."
+      }
+    },
+    "ai": {
+      "title": "KI-Integration",
+      "description": "Nutzen Sie die Kraft der künstlichen Intelligenz, um Ihre Effizienz zu steigern.",
+      "features": {
+        "one": "KI-Bereitschaftsbewertung",
+        "two": "Entwicklung maßgeschneiderter KI-Lösungen",
+        "three": "KI-Training & Implementierung"
+      },
+      "details": {
+        "intro": "Künstliche Intelligenz ist nicht nur ein Hype — es ist ein echtes Werkzeug, das Sie heute nutzen können, um Zeit zu sparen und die Produktivität zu steigern.",
+        "para1": "Ich helfe Unternehmen, praktische, realitätsnahe Nutzungsmöglichkeiten von KI zu erkunden, die auf ihre tägliche Arbeit zugeschnitten sind. Das kann Folgendes umfassen:",
+        "listItems": [
+          "Bewerten, wie KI-Tools in Ihre Arbeitsabläufe passen könnten",
+          "Ihnen zeigen, wie Sie Plattformen wie ChatGPT, Copilot oder andere KI-Assistenten effektiv nutzen",
+          "Einfache KI-gestützte Automatisierungen für wiederkehrende Aufgaben erstellen"
+        ],
+        "para2": "Ich werde keine komplexen Machine-Learning-Modelle erstellen — aber ich werde Ihnen helfen, die Kraft bestehender Tools auf eine Weise zu nutzen, die für Ihr Unternehmen sinnvoll ist.",
+        "conclusion": "KI ist keine Magie — aber mit der richtigen Anleitung kann es sich so anfühlen."
+      }
+    }
+  },
+  "consultation": {
+    "title": "Kostenlose IT-Beratung",
+    "subtitle": "Unsicher, wo Sie anfangen sollen? Buchen Sie eine kostenlose 30-minütige Beratung mit unseren Experten.",
+    "description": "In diesem Gespräch besprechen wir Ihre Geschäftsbedürfnisse, identifizieren potenzielle Verbesserungen und schlagen nächste Schritte vor – alles ohne Verpflichtung.",
+    "benefits": {
+      "title": "Was Sie erhalten:",
+      "items": {
+        "one": "Fachkundige Bewertung Ihrer aktuellen IT-Einrichtung",
+        "two": "Maßgeschneiderte Verbesserungsvorschläge",
+        "three": "Klarer Fahrplan für die digitale Transformation",
+        "four": "Antworten auf Ihre spezifischen Technologiefragen"
+      }
+    },
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "company": "Firmenname",
+      "phone": "Telefonnummer (optional)",
+      "message": "Erzählen Sie uns kurz von Ihren Geschäftsbedürfnissen",
+      "submit": "Beratung vereinbaren",
+      "privacy": "Mit dem Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie zu."
+    },
+    "success": "Vielen Dank! Wir werden Sie innerhalb eines Werktages kontaktieren, um Ihre kostenlose Beratung zu planen."
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie ein Projekt im Sinn? Lassen Sie uns besprechen, wie wir Ihrem Unternehmen beim Wachstum helfen können.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "description": "Zögern Sie nicht, uns bei Fragen oder Anfragen zu kontaktieren. Wir sind hier, um zu helfen."
+    },
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "message": "Ihre Nachricht",
+      "submit": "Nachricht senden"
+    },
+    "success": "Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden."
+  },
+  "footer": {
+    "description": "Ingio.is bietet professionelle IT-Dienstleistungen, Digitalisierungsberatung und KI-Workflow-Integration für kleine Unternehmen in Bayern.",
+    "links": {
+      "title": "Schnellzugriff",
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "contact": "Kontakt"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen"
+    },
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "Index": {
+    "title": "Professionelle IT-Dienstleistungen & Beratung",
+    "subtitle": "Transformation von Unternehmen durch Technologie",
+    "contactButton": "Kontakt aufnehmen",
+    "learnMoreButton": "Mehr erfahren"
+  },
+  "Nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt"
+  },
+  "Services": {
+    "title": "Unsere Dienstleistungen",
+    "consultingTitle": "IT-Beratung",
+    "consultingDesc": "Strategische Technologieplanung und -implementierung",
+    "digitalTitle": "Digitale Transformation",
+    "digitalDesc": "Modernisierung Ihres Unternehmens für das digitale Zeitalter",
+    "aiTitle": "KI-Integration",
+    "aiDesc": "Implementierung von KI-Lösungen zur Optimierung von Arbeitsabläufen"
+  },
+  "Footer": {
+    "copyright": "© 2024 Ingio IT-Dienstleistungen. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "lastUpdated": "Zuletzt aktualisiert: 1. Mai 2024",
+      "introduction": "Bei Ingio IT Services respektieren wir Ihre Privatsphäre und sind bestrebt, Ihre persönlichen Daten zu schützen. Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen sammeln, verwenden und schützen, wenn Sie unsere Website oder Dienstleistungen nutzen.",
+      "collection": {
+        "title": "Informationen, die wir sammeln",
+        "description": "Wir können verschiedene Arten von Informationen sammeln, darunter:",
+        "items": {
+          "personal": {
+            "title": "Persönliche Informationen",
+            "description": "Name, E-Mail-Adresse, Telefonnummer und andere Kontaktdaten, die Sie angeben, wenn Sie uns kontaktieren oder unsere Dienste nutzen."
+          },
+          "usage": {
+            "title": "Nutzungsdaten",
+            "description": "Informationen darüber, wie Sie unsere Website nutzen, einschließlich IP-Adresse, Browsertyp, besuchte Seiten und Verweildauer auf unserer Website."
+          },
+          "cookies": {
+            "title": "Cookies",
+            "description": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um Ihre Erfahrung auf unserer Website zu verbessern."
+          }
+        }
+      },
+      "usage": {
+        "title": "Wie wir Ihre Informationen verwenden",
+        "description": "Wir verwenden Ihre Informationen für verschiedene Zwecke, darunter:",
+        "items": {
+          "provide": "Um unsere Dienstleistungen bereitzustellen und zu erhalten",
+          "improve": "Um Ihre Erfahrung mit unserer Website und unseren Dienstleistungen zu verbessern und zu personalisieren",
+          "communicate": "Um mit Ihnen über unsere Dienstleistungen, Werbeaktionen und Updates zu kommunizieren",
+          "legal": "Um gesetzlichen Verpflichtungen nachzukommen und unsere Rechte zu schützen"
+        }
+      },
+      "sharing": {
+        "title": "Informationsaustausch",
+        "description": "Wir verkaufen Ihre persönlichen Daten nicht. Wir können Ihre Informationen teilen mit:",
+        "items": {
+          "providers": "Dienstleistern, die uns bei der Erbringung unserer Dienstleistungen unterstützen",
+          "legal": "Strafverfolgungsbehörden, wenn dies gesetzlich vorgeschrieben ist",
+          "business": "Geschäftspartnern mit Ihrer Zustimmung"
+        }
+      },
+      "security": {
+        "title": "Datensicherheit",
+        "description": "Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen Daten. Keine Methode der Übertragung über das Internet oder der elektronischen Speicherung ist jedoch zu 100% sicher. Wir bemühen uns, kommerziell akzeptable Mittel zum Schutz Ihrer persönlichen Daten einzusetzen."
+      },
+      "rights": {
+        "title": "Ihre Rechte",
+        "description": "Je nach Ihrem Standort haben Sie möglicherweise die folgenden Rechte in Bezug auf Ihre persönlichen Daten:",
+        "items": {
+          "access": {
+            "title": "Recht auf Zugang",
+            "description": "Sie können Zugang zu Ihren persönlichen Daten anfordern, die wir speichern"
+          },
+          "correction": {
+            "title": "Recht auf Berichtigung",
+            "description": "Sie können die Berichtigung ungenauer oder unvollständiger Daten anfordern"
+          },
+          "deletion": {
+            "title": "Recht auf Löschung",
+            "description": "Sie können unter bestimmten Umständen die Löschung Ihrer persönlichen Daten beantragen"
+          },
+          "objection": {
+            "title": "Recht auf Widerspruch",
+            "description": "Sie können der Verarbeitung Ihrer persönlichen Daten widersprechen"
+          },
+          "withdrawal": {
+            "title": "Recht auf Widerruf der Einwilligung",
+            "description": "Sie können Ihre Einwilligung jederzeit widerrufen, wenn wir uns bei der Verarbeitung Ihrer persönlichen Daten auf Ihre Einwilligung gestützt haben"
+          }
+        }
+      },
+      "children": {
+        "title": "Datenschutz für Kinder",
+        "description": "Unsere Dienste sind nicht für Personen unter 16 Jahren bestimmt. Wir sammeln wissentlich keine persönlichen Informationen von Kindern. Wenn Sie ein Elternteil oder Erziehungsberechtigter sind und glauben, dass Ihr Kind uns persönliche Informationen zur Verfügung gestellt hat, kontaktieren Sie uns bitte."
+      },
+      "changes": {
+        "title": "Änderungen dieser Datenschutzerklärung",
+        "description": "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das Datum der 'Letzten Aktualisierung' aktualisieren."
+      },
+      "contact": {
+        "title": "Kontaktieren Sie uns",
+        "description": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter:",
+        "email": {
+          "title": "E-Mail",
+          "value": "privacy@ingio.is"
+        }
+      }
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "lastUpdated": "Zuletzt aktualisiert: 1. Mai 2024",
+      "introduction": "Willkommen bei Ingio IT Services. Diese Nutzungsbedingungen regeln Ihre Nutzung unserer Website und Dienstleistungen. Durch den Zugriff auf oder die Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden.",
+      "acceptance": {
+        "title": "Annahme der Bedingungen",
+        "description": "Durch den Zugriff auf oder die Nutzung unserer Website oder Dienste erklären Sie sich damit einverstanden, an diese Nutzungsbedingungen und alle geltenden Gesetze und Vorschriften gebunden zu sein. Wenn Sie mit einer dieser Bedingungen nicht einverstanden sind, ist es Ihnen untersagt, unsere Dienste zu nutzen oder darauf zuzugreifen."
+      },
+      "services": {
+        "title": "Beschreibung der Dienste",
+        "description": "Ingio IT Services bietet IT-Infrastruktur, Digitalisierung und KI-Integrationsdienste für Unternehmen, wie auf unserer Website und in unseren Dienstleistungsvereinbarungen beschrieben.",
+        "modification": "Wir behalten uns das Recht vor, jeden Teil unserer Dienste jederzeit ohne vorherige Ankündigung zu ändern, auszusetzen oder einzustellen."
+      },
+      "user": {
+        "title": "Verantwortlichkeiten des Nutzers",
+        "description": "Als Nutzer unserer Dienste sind Sie verantwortlich für:",
+        "responsibilities": {
+          "accurate": "Die Bereitstellung genauer und vollständiger Informationen bei der Kommunikation mit uns",
+          "security": "Die Aufrechterhaltung der Sicherheit aller Ihnen zur Verfügung gestellten Anmeldedaten oder Zugänge",
+          "laws": "Die Einhaltung aller geltenden Gesetze und Vorschriften",
+          "conduct": "Die Sicherstellung, dass Ihre Nutzung unserer Dienste nicht die Rechte anderer verletzt"
+        }
+      },
+      "ip": {
+        "title": "Geistiges Eigentum",
+        "description": "Der Inhalt, die Funktionen und Funktionalität unserer Website, einschließlich, aber nicht beschränkt auf Text, Grafiken, Logos und Software, sind Eigentum von Ingio IT Services und durch Urheberrechte, Markenzeichen und andere Gesetze zum Schutz geistigen Eigentums geschützt.",
+        "ownership": "Kundenspezifische Arbeiten und Ergebnisse unterliegen den in den einzelnen Dienstleistungsvereinbarungen festgelegten Bedingungen."
+      },
+      "liability": {
+        "title": "Haftungsbeschränkung",
+        "description": "In keinem Fall haften Ingio IT Services, seine Direktoren, Mitarbeiter, Partner, Vertreter, Lieferanten oder verbundenen Unternehmen für indirekte, zufällige, besondere, Folge- oder Strafschäden, die aus Ihrer Nutzung oder Unfähigkeit zur Nutzung unserer Dienste resultieren.",
+        "limitation": "Unsere Haftung ist im gesetzlich zulässigen Höchstmaß beschränkt und übersteigt nicht den von Ihnen für die Nutzung unserer Dienste gezahlten Betrag, falls vorhanden."
+      },
+      "indemnification": {
+        "title": "Entschädigung",
+        "description": "Sie erklären sich damit einverstanden, Ingio IT Services und seine verbundenen Unternehmen, leitenden Angestellten, Direktoren, Mitarbeiter und Vertreter von allen Ansprüchen, Verbindlichkeiten, Schäden, Verlusten, Kosten, Ausgaben oder Gebühren freizustellen und schadlos zu halten, die aus Ihrer Nutzung unserer Dienste oder aus Ihrer Verletzung dieser Bedingungen entstehen."
+      },
+      "termination": {
+        "title": "Laufzeit und Kündigung",
+        "description": "Diese Bedingungen bleiben in Kraft, bis sie entweder von Ihnen oder von Ingio IT Services gekündigt werden. Wir können Ihren Zugang zu unseren Diensten jederzeit aus beliebigem Grund ohne vorherige Ankündigung beenden.",
+        "effect": "Bei Kündigung erlischt Ihr Recht zur Nutzung unserer Dienste sofort, und alle Bestimmungen dieser Bedingungen, die ihrer Natur nach die Kündigung überdauern sollten, bleiben bestehen."
+      },
+      "governing": {
+        "title": "Geltendes Recht",
+        "description": "Diese Bedingungen unterliegen den Gesetzen Deutschlands und werden in Übereinstimmung mit diesen ausgelegt, ohne Berücksichtigung von Kollisionsnormen. Sie erklären sich damit einverstanden, sich der persönlichen Gerichtsbarkeit der Gerichte in München, Bayern, zur Beilegung von Streitigkeiten zu unterwerfen."
+      },
+      "changes": {
+        "title": "Änderungen der Bedingungen",
+        "description": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern oder zu ersetzen. Es liegt in Ihrer Verantwortung, diese Bedingungen regelmäßig auf Änderungen zu überprüfen. Ihre fortgesetzte Nutzung unserer Dienste nach der Veröffentlichung von Änderungen stellt Ihre Annahme dieser Änderungen dar."
+      },
+      "contact": {
+        "title": "Kontaktinformationen",
+        "description": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter:",
+        "email": {
+          "title": "E-Mail",
+          "value": "legal@ingio.is"
+        }
+      }
+    }
+  }
+}
+  

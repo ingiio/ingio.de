@@ -1,0 +1,419 @@
+{
+  "hero": {
+    "title": "Empowering Your IT, One Byte at a Time",
+    "subtitle": "Expert IT services, digitalization consulting, and AI workflow integration for small businesses in Bavaria.",
+    "buttons": {
+      "services": "Our Services",
+      "contact": "Get in Touch"
+    }
+  },
+  "nav": {
+    "contact": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer a range of technology services to help your business thrive in the digital landscape.",
+    "learnMore": "Learn more",
+    "closeButton": "Close",
+    "it": {
+      "title": "IT Infrastructure",
+      "description": "Secure networking, setup, and maintenance tailored to your business needs.",
+      "features": {
+        "one": "Network Security & Management",
+        "two": "Hardware & Software Integration",
+        "three": "Proactive Maintenance & Support"
+      },
+      "details": {
+        "intro": "Whether you're running a single office or multiple sites, I can help you build and maintain a secure, efficient, and future-ready IT setup.",
+        "para1": "I support both on-site hardware (like firewalls, switches, servers, and workstations) and cloud-first environments — including modern workplace solutions using Microsoft Intune and Entra for device and identity management.",
+        "para2": "From setting up your network securely, integrating software and hardware, to proactively keeping systems healthy — I make sure your technology doesn't hold you back.",
+        "conclusion": "Let's get your foundation solid."
+      }
+    },
+    "digital": {
+      "title": "Digitalization",
+      "description": "Transform your business processes with modern digital solutions.",
+      "features": {
+        "one": "Digital Strategy Consulting",
+        "two": "Cloud Migration & Management",
+        "three": "Workflow Optimization"
+      },
+      "details": {
+        "intro": "Is your business still running on old tools, cluttered workflows, or outdated systems? I help small businesses modernize and simplify operations using today's digital solutions.",
+        "listIntro": "Whether you're looking to:",
+        "listItems": [
+          "Move to the cloud (email, files, apps)",
+          "Reduce manual work with better workflows",
+          "Improve how your team collaborates remotely"
+        ],
+        "para1": "… I'll guide you through the right choices and handle the technical side.",
+        "para2": "I don't push buzzwords — I focus on what makes your business run smoother and more securely.",
+        "conclusion": "Think of it as a digital tune-up with long-term value."
+      }
+    },
+    "ai": {
+      "title": "AI Integration",
+      "description": "Leverage the power of artificial intelligence to boost your efficiency.",
+      "features": {
+        "one": "AI Readiness Assessment",
+        "two": "Custom AI Solutions Development",
+        "three": "AI Training & Implementation"
+      },
+      "details": {
+        "intro": "Artificial intelligence isn't just hype — it's a real tool you can start using today to save time and boost productivity.",
+        "para1": "I help businesses explore practical, real-world uses of AI, tailored to their daily work. This can include:",
+        "listItems": [
+          "Assessing how AI tools could fit into your workflows",
+          "Showing you how to use platforms like ChatGPT, Copilot, or other AI assistants effectively",
+          "Building simple AI-enhanced automations for repetitive tasks"
+        ],
+        "para2": "I won't build complex machine learning models — but I will help you leverage the power of existing tools in a way that makes sense for your business.",
+        "conclusion": "AI isn't magic — but with the right guidance, it can feel like it."
+      }
+    }
+  },
+  "consultation": {
+    "title": "Free IT Consultation",
+    "subtitle": "Not sure where to start? Book a free 30-minute consultation with our experts.",
+    "description": "During this session, we'll discuss your business needs, identify potential improvements, and suggest next steps – all with no obligation.",
+    "benefits": {
+      "title": "What You'll Get:",
+      "items": {
+        "one": "Expert assessment of your current IT setup",
+        "two": "Tailored recommendations for improvement",
+        "three": "Clear roadmap for digital transformation",
+        "four": "Answers to your specific technology questions"
+      }
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "company": "Company Name",
+      "phone": "Phone Number (optional)",
+      "message": "Tell us briefly about your business needs",
+      "submit": "Schedule Consultation",
+      "privacy": "By submitting this form, you agree to our privacy policy."
+    },
+    "success": "Thank you! We'll contact you within 1 business day to schedule your free consultation."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind? Let's discuss how we can help your business grow.",
+    "info": {
+      "title": "Contact Information",
+      "description": "Feel free to reach out to us with any questions or inquiries. We're here to help."
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "success": "Thank you for your message! We'll get back to you soon."
+  },
+  "footer": {
+    "description": "Ingio.is provides expert IT services, digitalization consulting, and AI workflow integration for small businesses in Bavaria.",
+    "links": {
+      "title": "Quick Links",
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "All rights reserved."
+  },
+  "Index": {
+    "title": "Expert IT Services & Consulting",
+    "subtitle": "Transforming businesses through technology",
+    "contactButton": "Contact Us",
+    "learnMoreButton": "Learn More"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Services": {
+    "title": "Our Services",
+    "consultingTitle": "IT Consulting",
+    "consultingDesc": "Strategic technology planning and implementation",
+    "digitalTitle": "Digital Transformation",
+    "digitalDesc": "Modernizing your business for the digital age",
+    "aiTitle": "AI Integration",
+    "aiDesc": "Implementing AI solutions to optimize workflows"
+  },
+  "Footer": {
+    "copyright": "© 2024 Ingio IT Services. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn about our company, mission, and the team behind Ingio IT Services",
+    "mission": {
+      "title": "Our Mission & Vision",
+      "description": "At Ingio IT Services, our mission is to empower small businesses with enterprise-grade technology solutions that are accessible, efficient, and future-proof. We believe that every business deserves the power of modern technology, regardless of size.",
+      "values": {
+        "title": "Our Core Values",
+        "integrity": "Integrity in every interaction",
+        "innovation": "Constant innovation and learning",
+        "excellence": "Excellence in service delivery",
+        "collaboration": "Collaborative approach to solutions"
+      },
+      "approach": {
+        "title": "Our Approach",
+        "client": {
+          "title": "Client-Centered Focus",
+          "description": "We put your business goals at the center of every solution we design."
+        },
+        "tailored": {
+          "title": "Tailored Solutions",
+          "description": "We create custom strategies that fit your specific business needs and budget."
+        },
+        "futureproof": {
+          "title": "Future-Proof Technology",
+          "description": "We implement scalable solutions that grow with your business."
+        }
+      }
+    },
+    "story": {
+      "title": "Our Story",
+      "part1": "Ingio IT Services was founded in 2018 by technology enthusiasts who saw a gap in the market: small businesses in Bavaria were not receiving the level of IT support they needed to truly thrive in the digital age.",
+      "part2": "What started as a small consulting practice has grown into a comprehensive IT service provider, helping dozens of local businesses modernize their operations, secure their data, and leverage new technologies.",
+      "part3": "Today, we specialize in bridging the gap between traditional business operations and cutting-edge technology, with a particular focus on AI integration and digital transformation."
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "founder": {
+        "name": "Ingi Gauti",
+        "role": "Founder & CEO",
+        "bio": "With over 15 years in IT consulting and software development, Ingi brings vision and leadership to every project."
+      },
+      "tech": {
+        "name": "Maria Schmidt",
+        "role": "Technical Director",
+        "bio": "Maria's expertise in network architecture and cloud solutions ensures our technical implementations are robust and scalable."
+      },
+      "solutions": {
+        "name": "Thomas Weber",
+        "role": "Solutions Architect",
+        "bio": "Thomas specializes in translating business needs into practical technology solutions with a focus on AI and automation."
+      }
+    }
+  },
+  "servicePages": {
+    "infrastructure": {
+      "overview": {
+        "title": "Modern IT Infrastructure Solutions",
+        "description": "A robust IT infrastructure is the backbone of any successful business today. At Ingio IT Services, we design, implement, and maintain secure, reliable, and scalable IT systems that support your business operations and growth objectives.",
+        "benefits": {
+          "security": {
+            "title": "Enhanced Security",
+            "description": "Protect your business data and operations with enterprise-grade security solutions tailored to your specific needs."
+          },
+          "reliability": {
+            "title": "Increased Reliability",
+            "description": "Minimize downtime and disruptions with redundant systems and proactive monitoring and maintenance."
+          },
+          "scalability": {
+            "title": "Future-Ready Scalability",
+            "description": "Build systems that grow with your business, avoiding costly overhauls as your needs evolve."
+          }
+        }
+      },
+      "services": {
+        "title": "Our IT Infrastructure Services",
+        "list": {
+          "networkSecurity": {
+            "title": "Network Security & Management",
+            "description": "We design, implement, and maintain secure and efficient networks that form the foundation of your IT infrastructure.",
+            "features": {
+              "1": "Firewall setup and management",
+              "2": "Virtual Private Networks (VPNs) for secure remote access",
+              "3": "Network monitoring and threat detection"
+            }
+          },
+          "hardware": {
+            "title": "Hardware & Software Integration",
+            "description": "We source, set up, and integrate the right hardware and software solutions to meet your business requirements.",
+            "features": {
+              "1": "Server installation and configuration",
+              "2": "Workstation deployment and management",
+              "3": "Software licensing and management"
+            }
+          },
+          "maintenance": {
+            "title": "Proactive Maintenance & Support",
+            "description": "We ensure your IT systems run smoothly with regular maintenance and responsive support.",
+            "features": {
+              "1": "24/7 monitoring and alert systems",
+              "2": "Regular maintenance and updates",
+              "3": "Help desk support for your team"
+            }
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to Strengthen Your IT Infrastructure?",
+        "description": "Let us help you build a robust, secure, and scalable IT infrastructure that supports your business goals.",
+        "primary": "Contact Us",
+        "secondary": "View All Services"
+      }
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last Updated: May 1, 2024",
+      "introduction": "At Ingio IT Services, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you use our website or services.",
+      "collection": {
+        "title": "Information We Collect",
+        "description": "We may collect various types of information, including:",
+        "items": {
+          "personal": {
+            "title": "Personal Information",
+            "description": "Name, email address, phone number, and other contact details you provide when you contact us or use our services."
+          },
+          "usage": {
+            "title": "Usage Data",
+            "description": "Information about how you use our website, including IP address, browser type, pages visited, and time spent on our site."
+          },
+          "cookies": {
+            "title": "Cookies",
+            "description": "We use cookies and similar tracking technologies to enhance your experience on our website."
+          }
+        }
+      },
+      "usage": {
+        "title": "How We Use Your Information",
+        "description": "We use your information for various purposes, including:",
+        "items": {
+          "provide": "To provide and maintain our services",
+          "improve": "To improve and personalize your experience with our website and services",
+          "communicate": "To communicate with you about our services, promotions, and updates",
+          "legal": "To comply with legal obligations and protect our rights"
+        }
+      },
+      "sharing": {
+        "title": "Information Sharing",
+        "description": "We do not sell your personal information. We may share your information with:",
+        "items": {
+          "providers": "Service providers who help us deliver our services",
+          "legal": "Law enforcement agencies when required by law",
+          "business": "Business partners with your consent"
+        }
+      },
+      "security": {
+        "title": "Data Security",
+        "description": "We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure. We strive to use commercially acceptable means to protect your personal data."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "description": "Depending on your location, you may have the following rights regarding your personal data:",
+        "items": {
+          "access": {
+            "title": "Right to Access",
+            "description": "You can request access to your personal data we hold"
+          },
+          "correction": {
+            "title": "Right to Correction",
+            "description": "You can request correction of inaccurate or incomplete data"
+          },
+          "deletion": {
+            "title": "Right to Deletion",
+            "description": "You can request deletion of your personal data in certain circumstances"
+          },
+          "objection": {
+            "title": "Right to Object",
+            "description": "You can object to our processing of your personal data"
+          },
+          "withdrawal": {
+            "title": "Right to Withdraw Consent",
+            "description": "You can withdraw your consent at any time where we relied on your consent to process your personal data"
+          }
+        }
+      },
+      "children": {
+        "title": "Children's Privacy",
+        "description": "Our services are not intended for individuals under the age of 16. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us."
+      },
+      "changes": {
+        "title": "Changes to This Privacy Policy",
+        "description": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "If you have any questions about this Privacy Policy, please contact us at:",
+        "email": {
+          "title": "Email",
+          "value": "privacy@ingio.is"
+        }
+      }
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last Updated: May 1, 2024",
+      "introduction": "Welcome to Ingio IT Services. These Terms of Service govern your use of our website and services. By accessing or using our services, you agree to be bound by these Terms.",
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "description": "By accessing or using our website or services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services."
+      },
+      "services": {
+        "title": "Services Description",
+        "description": "Ingio IT Services provides IT infrastructure, digitalization, and AI integration services for businesses, as described on our website and in our service agreements.",
+        "modification": "We reserve the right to modify, suspend, or discontinue any part of our services at any time without prior notice."
+      },
+      "user": {
+        "title": "User Responsibilities",
+        "description": "As a user of our services, you are responsible for:",
+        "responsibilities": {
+          "accurate": "Providing accurate and complete information when communicating with us",
+          "security": "Maintaining the security of any credentials or access provided to you",
+          "laws": "Complying with all applicable laws and regulations",
+          "conduct": "Ensuring that your use of our services does not infringe upon the rights of others"
+        }
+      },
+      "ip": {
+        "title": "Intellectual Property",
+        "description": "The content, features, and functionality of our website, including but not limited to text, graphics, logos, and software, are owned by Ingio IT Services and are protected by copyright, trademark, and other intellectual property laws.",
+        "ownership": "Client-specific work and deliverables are governed by the terms specified in individual service agreements."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "description": "In no event shall Ingio IT Services, its directors, employees, partners, agents, suppliers, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use our services.",
+        "limitation": "Our liability is limited to the maximum extent permitted by law and shall not exceed the amount paid by you, if any, for using our services."
+      },
+      "indemnification": {
+        "title": "Indemnification",
+        "description": "You agree to indemnify and hold harmless Ingio IT Services and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, expenses, or fees arising from your use of our services or your violation of these Terms."
+      },
+      "termination": {
+        "title": "Term and Termination",
+        "description": "These Terms remain in effect until terminated by either you or Ingio IT Services. We may terminate your access to our services at any time for any reason without prior notice.",
+        "effect": "Upon termination, your right to use our services will immediately cease, and all provisions of these Terms that should by their nature survive termination shall survive."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "description": "These Terms shall be governed by and construed in accordance with the laws of Germany, without regard to its conflict of law provisions. You agree to submit to the personal jurisdiction of the courts located within Munich, Bavaria for the resolution of any disputes."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "description": "We reserve the right to modify or replace these Terms at any time. It is your responsibility to review these Terms periodically for changes. Your continued use of our services following the posting of any changes constitutes acceptance of those changes."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "description": "If you have any questions about these Terms, please contact us at:",
+        "email": {
+          "title": "Email",
+          "value": "legal@ingio.is"
+        }
+      }
+    }
+  }
+}
+  
