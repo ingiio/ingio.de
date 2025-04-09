@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "ingio-is-cloudflare-workers",
+  "version": "1.0.0",
+  "description": "Cloudflare Workers site for ingio.is",
+  "main": "index.js",
+  "author": "Ingi Gauti",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.2.0"
+  }
+} 

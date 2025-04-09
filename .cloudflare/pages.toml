@@ -1,0 +1,33 @@
+# Configuration for Cloudflare Pages
+
+[build]
+  command = "npm run build"
+  publish = "out"
+  environment = { NODE_VERSION = "18" }
+
+# Redirects
+[[redirects]]
+  from = "/"
+  to = "/en"  # Default to English
+  status = 302
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/"
+  to = "/de"  # German version
+  status = 302
+  conditions = {Language = ["de"]}
+
+# Handle 404s 
+[[routes]]
+  pattern = "/en/*"
+  script = ".cloudflare/workers-site/index.js"
+
+[[routes]]
+  pattern = "/de/*"
+  script = ".cloudflare/workers-site/index.js"
+
+# Catch-all route
+[[routes]]
+  pattern = "*"
+  script = ".cloudflare/workers-site/index.js" 

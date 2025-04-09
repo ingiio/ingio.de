@@ -13,9 +13,12 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+    unoptimized: true, // Required for Cloudflare Pages static exports
   },
   // Enable React 19 features
   reactStrictMode: true,
+  // Set output to static export for Cloudflare Pages
+  output: 'export',
 };
 
 // Apply the plugin
