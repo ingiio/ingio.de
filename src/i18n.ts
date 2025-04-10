@@ -1,18 +1,8 @@
-import { getRequestConfig } from 'next-intl/server';
-
+// Configuration for internationalization
 export const locales = ['en', 'de'] as const;
 export const defaultLocale = 'en' as const;
 
-export default getRequestConfig(async ({ locale }) => {
-  // Load messages for the current locale
-  const messages = (await import(`./messages/${locale}.json`)).default;
-
-  return {
-    messages
-  };
-});
-
-// Configure routing with locale prefix
+// Configure routing with locale prefix - use static definition for static exports
 export const i18nConfig = {
   locales,
   defaultLocale,

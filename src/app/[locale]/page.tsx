@@ -1,20 +1,14 @@
 // src/app/[locale]/page.tsx
-'use client';
+import ClientHomePage from '@/components/ClientHomePage';
 
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import ServicesSection from '@/components/ServicesSection';
-import ConsultationSection from '@/components/ConsultationSection';
-import Footer from '@/components/Footer';
+// Define static paths for home page
+export function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'de' }
+  ];
+}
 
 export default function HomePage() {
-  return (
-    <main>
-      <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <ConsultationSection />
-      <Footer />
-    </main>
-  );
+  return <ClientHomePage />;
 }

@@ -4,6 +4,8 @@ import { locales } from '@/i18n';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import '../globals.css';
+import { getMessages } from '@/i18n/client';
+import { AbstractIntlMessages } from 'next-intl';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   // Get the locale from params
@@ -27,7 +29,8 @@ export function generateStaticParams() {
   return locales.map(locale => ({ locale }));
 }
 
-export default async function LocaleLayout({
+// Make this a client component for static export compatibility
+export default function LocaleLayout({
   children,
   params: { locale }
 }: {
@@ -39,18 +42,17 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  // Load the translation messages
-  let messages;
-  try {
-    messages = (await import(`@/messages/${locale}.json`)).default;
-  } catch (error) {
-    notFound();
-  }
+  // Load the translation messages using our static approach
+  const messages = getMessages(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider 
+          locale={locale} 
+          messages={messages as any} 
+          timeZone="UTC"
+        >
           {children}
         </NextIntlClientProvider>
       </body>

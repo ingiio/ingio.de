@@ -185,7 +185,7 @@ export default function ServiceContent({ serviceId, isModal = false, isCompact =
             Contact us today to discuss how our {t(`${serviceId}.title`)} services can help your business thrive.
           </p>
           <div className="flex justify-center gap-3">
-            <Link href="/contact" className="btn-primary text-sm py-2">Get in Touch</Link>
+            <Link href="#consultation" className="btn-primary text-sm py-2">Get in Touch</Link>
             {isModal && (
               <button onClick={() => window.history.back()} className="btn-outline text-sm py-2">Back to Services</button>
             )}

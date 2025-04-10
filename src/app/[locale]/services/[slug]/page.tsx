@@ -1,26 +1,17 @@
-'use client';
+import ClientServicePage from '@/components/ClientServicePage';
 
-import React from 'react';
-import { useParams } from 'next/navigation';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ServiceContent from '@/components/ServiceContent';
-import { notFound } from 'next/navigation';
+// Define all possible paths for static generation
+export function generateStaticParams() {
+  return [
+    { locale: 'en', slug: 'it' },
+    { locale: 'en', slug: 'digital' },
+    { locale: 'en', slug: 'ai' },
+    { locale: 'de', slug: 'it' },
+    { locale: 'de', slug: 'digital' },
+    { locale: 'de', slug: 'ai' },
+  ];
+}
 
 export default function ServicePage() {
-  const params = useParams();
-  const slug = typeof params.slug === 'string' ? params.slug : '';
-  
-  // Validate slug is a valid service
-  if (!['it', 'digital', 'ai'].includes(slug)) {
-    notFound();
-  }
-  
-  return (
-    <main>
-      <Navbar />
-      <ServiceContent serviceId={slug} isModal={false} />
-      <Footer />
-    </main>
-  );
+  return <ClientServicePage />;
 } 

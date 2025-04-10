@@ -1,15 +1,18 @@
+// Server-side i18n configuration
 import { getRequestConfig } from 'next-intl/server';
-import { locales, defaultLocale } from '../i18n';
+
+// Import messages directly - this works in both dev and production
+import enMessages from '../messages/en.json';
+import deMessages from '../messages/de.json';
 
 export default getRequestConfig(async ({ locale }) => {
-  // Make sure we have a valid locale
-  const validLocale = locales.includes(locale as any) ? locale : defaultLocale;
+  // Get the appropriate messages for the locale
+  const messages = locale === 'de' ? deMessages : enMessages;
   
   return {
-    locale: validLocale,
-    messages: (await import(`../messages/${validLocale}.json`)).default,
-    // Turn off time/date features we're not using to reduce hydration mismatches
+    // Use type assertion to solve type compatibility issues
+    messages: messages as any,
     timeZone: 'UTC',
-    now: undefined,
+    now: new Date()
   };
 }); 

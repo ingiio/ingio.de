@@ -107,7 +107,7 @@ export default function ITInfrastructurePage() {
             <h2 className="text-2xl font-bold mb-4 gradient-text">{tServices('cta.title')}</h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">{tServices('cta.description')}</p>
             <div className="flex justify-center gap-4">
-              <Link href="/contact" className="btn-primary">{tServices('cta.primary')}</Link>
+              <Link href="#consultation" className="btn-primary">{tServices('cta.primary')}</Link>
               <Link href="/services" className="btn-outline">{tServices('cta.secondary')}</Link>
             </div>
           </div>

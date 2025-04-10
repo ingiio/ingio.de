@@ -3,9 +3,12 @@ import { locales, defaultLocale } from '@/i18n';
 
 // Match all paths except ones starting with /api, /_next, etc.
 export default createMiddleware({
-  locales,
-  defaultLocale,
-  localePrefix: 'always'
+  // Use string arrays for locales to avoid type issues
+  locales: ['en', 'de'],
+  defaultLocale: 'en',
+  localePrefix: 'always',
+  // Disable dynamic features for static export
+  localeDetection: false
 });
 
 export const config = {
