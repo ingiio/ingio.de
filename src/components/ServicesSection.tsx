@@ -1,9 +1,8 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { motion, AnimatePresence } from 'framer-motion';
-import ServiceContent from './ServiceContent';
+import { Link } from '@/navigation';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 
 interface ServiceItem {
@@ -17,16 +16,14 @@ interface ServiceItem {
 export default function ServicesSection() {
   const t = useTranslations('services');
   const locale = useLocale();
-  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
   const cardRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-  const detailsRef = useRef<HTMLDivElement>(null);
 
   const services: ServiceItem[] = [
     {
       id: 'it',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
         </svg>
       ),
       title: 'it.title',
@@ -37,7 +34,7 @@ export default function ServicesSection() {
       id: 'digital',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
         </svg>
       ),
       title: 'digital.title',
@@ -48,7 +45,7 @@ export default function ServicesSection() {
       id: 'ai',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714a2.25 2.25 0 001.241 2.012l.209.111a2.25 2.25 0 001.09.216m-4.5-8.053a3 3 0 011.067-.998 24.301 24.301 0 014.5 0M3 3l7.5 7.5M21 3l-7.5 7.5m0 0L9 15l3-3m0 0l3 3m-3-3l3-3" />
         </svg>
       ),
       title: 'ai.title',
@@ -57,76 +54,57 @@ export default function ServicesSection() {
     }
   ];
 
-  const openServiceDetails = (serviceId: string) => {
-    setSelectedServiceId(serviceId);
-    setTimeout(() => {
-        detailsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 100);
-  };
-
-  const closeServiceDetails = () => {
-    setSelectedServiceId(null);
-  };
-
   const renderServiceCard = (service: ServiceItem, index: number) => {
     return (
-      <motion.div
-        layout
-        layoutId={service.id}
+      <div
         key={service.id}
         ref={(el) => { cardRefs.current[service.id] = el; }}
-        className="card group md:col-span-1"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.5,
-          delay: index * 0.1
-        }}
-        whileHover={{
-          y: -8,
-          borderColor: 'rgba(168, 85, 247, 0.3)',
-          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
-        }}
-        onClick={() => openServiceDetails(service.id)}
-        style={{ cursor: 'pointer' }}
+        className="card group md:col-span-1 hover:-translate-y-2 hover:border-purple-500/30 hover:shadow-lg transition-all pb-16 relative"
       >
         <div className="flex items-start">
-          <div className="flex-shrink-0 mb-6 h-16 w-16 rounded-2xl bg-purple-900/20 flex items-center justify-center group-hover:bg-purple-900/40 transition-all">
+          <div className="flex-shrink-0 mb-4 h-16 w-16 rounded-2xl bg-purple-900/20 flex items-center justify-center group-hover:bg-purple-900/40 transition-all">
             {service.icon}
           </div>
           
           <div className="ml-6 flex-1">
-            <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-purple-300 transition-colors">
+            <h3 className="text-xl font-semibold mb-2 text-white group-hover:text-purple-300 transition-colors">
               {t(service.title)}
             </h3>
             
-            <p className="text-gray-400 mb-6">
+            <p className="text-gray-400 mb-4 text-sm">
               {t(service.description)}
             </p>
           </div>
         </div>
         
-        <ul className="space-y-2 relative z-10">
+        <ul className="space-y-1 mb-4 relative z-10">
           {service.features.map((feature, fIndex) => (
-            <li key={fIndex} className="flex items-center text-gray-400">
-              <span className="h-5 w-5 rounded-full bg-emerald-900/30 flex items-center justify-center mr-3 group-hover:bg-emerald-900/50 transition-all">
+            <li 
+              key={fIndex} 
+              className="flex items-start text-gray-400 text-sm"
+            >
+              <span className="h-5 w-5 rounded-full bg-emerald-900/30 flex items-center justify-center mr-2 flex-shrink-0 mt-0.5 group-hover:bg-emerald-900/50 transition-all">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              {t(feature)}
+              <span className="flex-1">{t(feature)}</span>
             </li>
           ))}
         </ul>
 
-        {/* Learn more indicator */}
-        <div className="absolute bottom-4 right-4 text-purple-400 opacity-0 group-hover:opacity-100 transform translate-y-1 group-hover:translate-y-0 transition-all duration-300 flex items-center">
-          <span className="mr-1 text-sm">{t('learnMore')}</span>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
+        {/* Link to dedicated service page */}
+        <div className="absolute bottom-4 inset-x-0">
+          <div className="flex justify-center items-center">
+            <Link href={`/services/${service.id}`} className="px-4 py-2 bg-purple-700 hover:bg-purple-600 text-white text-sm font-medium rounded-md flex items-center transition-all shadow-md">
+              {locale === 'de' ? 'Mehr erfahren' : 'Learn More'}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
         </div>
-      </motion.div>
+      </div>
     );
   };
 
@@ -148,48 +126,10 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        {/* Conditional Rendering Logic */}
-        <AnimatePresence mode="wait">
-          {!selectedServiceId ? (
-            <motion.div
-              layout
-              key="cards"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-8 relative"
-            >
-              {services.map((service, index) => renderServiceCard(service, index))}
-            </motion.div>
-          ) : (
-            <motion.div
-              layout
-              layoutId={selectedServiceId}
-              key="details"
-              ref={detailsRef}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-              className="relative"
-            >
-               {/* Close Button */}
-               <button
-                onClick={closeServiceDetails}
-                className="absolute top-0 right-0 mt-1 mr-1 z-20 p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 transition"
-                aria-label={t('closeButton')}
-               >
-                 <XMarkIcon className="h-6 w-6" />
-               </button>
-              {/* Render ServiceContent directly, passing the required props */}
-              <ServiceContent
-                serviceId={selectedServiceId}
-                isCompact={true}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {/* Cards grid is always visible */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          {services.map((service, index) => renderServiceCard(service, index))}
+        </div>
       </div>
     </section>
   );

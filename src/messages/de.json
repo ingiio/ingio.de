@@ -1,88 +1,92 @@
 {
   "hero": {
-    "title": "Stärkung Ihrer IT, ein Byte nach dem anderen",
-    "subtitle": "Professionelle IT-Dienstleistungen, Digitalisierungsberatung und KI-Workflow-Integration für kleine Unternehmen in Bayern.",
+    "title": "Lokaler IT-Support für Unternehmen im Allgäu",
+    "subtitle": "Zuverlässige, unkomplizierte Technologielösungen, die einfach funktionieren - von einem lokalen IT-Experten, der Ihre Unternehmensanforderungen versteht.",
     "buttons": {
-      "services": "Unsere Dienstleistungen",
-      "contact": "Kontakt aufnehmen"
+      "services": "Meine Leistungen",
+      "contact": "Kostenlose Beratung buchen"
     }
   },
   "nav": {
     "contact": "Kontakt"
   },
   "services": {
-    "title": "Unsere Dienstleistungen",
-    "subtitle": "Wir bieten eine Reihe von Technologiedienstleistungen an, um Ihrem Unternehmen zu helfen, in der digitalen Landschaft zu gedeihen.",
+    "title": "Wie ich Ihrem Unternehmen helfen kann",
+    "subtitle": "Praktische Technologielösungen, die Zeit sparen, Kopfschmerzen reduzieren und Ihr Unternehmen reibungslos am Laufen halten.",
     "learnMore": "Mehr erfahren",
     "closeButton": "Schließen",
+    "indexPage": {
+      "title": "Dienstleistungen & Lösungen",
+      "description": "Entdecken Sie meine IT-Dienstleistungen, die entwickelt wurden, um Allgäuer Unternehmen effizienter und sicherer arbeiten zu lassen."
+    },
     "it": {
-      "title": "IT-Infrastruktur",
-      "description": "Sichere Netzwerke, Installation und Wartung, zugeschnitten auf die Bedürfnisse Ihres Unternehmens.",
+      "title": "Sorgenfreier IT-Support",
+      "description": "Halten Sie Ihr Unternehmen am Laufen, ohne dass die Technologie im Weg steht.",
       "features": {
-        "one": "Netzwerksicherheit & Management",
-        "two": "Hardware- & Software-Integration",
-        "three": "Proaktive Wartung & Support"
+        "one": "Schnelle, reaktionsschnelle Hilfe bei Problemen",
+        "two": "Proaktive Wartung zur Problemvermeidung",
+        "three": "Unkomplizierte Sicherheit zum Schutz Ihres Unternehmens"
       },
       "details": {
-        "intro": "Ob Sie ein einzelnes Büro oder mehrere Standorte betreiben, ich kann Ihnen helfen, eine sichere, effiziente und zukunftsfähige IT-Einrichtung aufzubauen und zu pflegen.",
-        "para1": "Ich unterstütze sowohl lokale Hardware (wie Firewalls, Switches, Server und Arbeitsplatzrechner) als auch Cloud-basierte Umgebungen — einschließlich moderner Arbeitsplatzlösungen mit Microsoft Intune und Entra für Geräte- und Identitätsmanagement.",
-        "para2": "Von der sicheren Einrichtung Ihres Netzwerks, über die Integration von Software und Hardware, bis hin zur proaktiven Erhaltung gesunder Systeme — ich stelle sicher, dass Ihre Technologie Sie nicht zurückhält.",
-        "conclusion": "Lassen Sie uns Ihr Fundament solide gestalten."
+        "intro": "Technologie sollte Ihrem Unternehmen helfen, nicht mehr Arbeit schaffen. Ich biete praktischen IT-Support, der die Dinge einfach und zuverlässig hält.",
+        "para1": "Egal ob Sie Hilfe bei täglichen Problemen benötigen, sichere Systeme einrichten möchten oder sicherstellen wollen, dass Ihre Daten geschützt und gesichert sind - ich kümmere mich um die technischen Details, damit Sie sich auf die Führung Ihres Unternehmens konzentrieren können.",
+        "para2": "Mein Ansatz betont Zuverlässigkeit und Vorbeugung - potentielle Probleme identifizieren und beheben, bevor sie Ihren Geschäftsbetrieb beeinträchtigen.",
+        "conclusion": "Betrachten Sie mich als Ihre persönliche IT-Abteilung, nur ohne die Gemeinkosten."
       }
     },
     "digital": {
-      "title": "Digitalisierung",
-      "description": "Transformieren Sie Ihre Geschäftsprozesse mit modernen digitalen Lösungen.",
+      "title": "Vereinfachte digitale Werkzeuge",
+      "description": "Optimieren Sie Ihre Abläufe mit praktischen digitalen Lösungen.",
       "features": {
-        "one": "Digitale Strategieberatung",
-        "two": "Cloud-Migration & Management",
-        "three": "Workflow-Optimierung"
+        "one": "Unkomplizierte Cloud-Migration, die für Sie sinnvoll ist",
+        "two": "Geschäftswerkzeuge, die Zeit sparen und Papierkram reduzieren",
+        "three": "Remote-Arbeitslösungen, die Ihr Team verbunden halten"
       },
       "details": {
-        "intro": "Läuft Ihr Unternehmen noch mit alten Werkzeugen, unübersichtlichen Arbeitsabläufen oder veralteten Systemen? Ich helfe kleinen Unternehmen, ihre Abläufe mit heutigen digitalen Lösungen zu modernisieren und zu vereinfachen.",
-        "listIntro": "Egal, ob Sie folgendes vorhaben:",
+        "intro": "Digitale Transformation muss nicht kompliziert sein. Ich helfe kleinen Unternehmen im Allgäu, praktische digitale Werkzeuge einzusetzen, die die tägliche Arbeit erleichtern.",
+        "listIntro": "Mein Fokus liegt auf Lösungen, die echten Nutzen bringen:",
         "listItems": [
-          "In die Cloud umziehen (E-Mail, Dateien, Anwendungen)",
-          "Manuelle Arbeit durch bessere Workflows reduzieren",
-          "Die Remote-Zusammenarbeit Ihres Teams verbessern"
+          "Umstellung auf einfache Cloud-Systeme, die IT-Kopfschmerzen reduzieren",
+          "Einrichtung digitaler Werkzeuge, die Papierkram und manuelle Prozesse beseitigen",
+          "Schaffung sicherer Möglichkeiten für Ihr Team, von überall zu arbeiten"
         ],
-        "para1": "... ich führe Sie durch die richtigen Entscheidungen und kümmere mich um die technische Seite.",
-        "para2": "Ich dränge keine Schlagworte auf — ich konzentriere mich darauf, was Ihr Unternehmen reibungsloser und sicherer laufen lässt.",
-        "conclusion": "Betrachten Sie es als ein digitales Tuning mit langfristigem Wert."
+        "para1": "Ich beginne damit, zu verstehen, wie Ihr Unternehmen funktioniert, und empfehle dann nur die Werkzeuge, die Ihre Abläufe wirklich verbessern werden.",
+        "para2": "Keine unnötige Komplexität und kein Aufdrängen von Technologie, die Sie nicht brauchen - nur praktische Lösungen, die Ihr Unternehmen effizienter machen.",
+        "conclusion": "Die richtigen digitalen Werkzeuge sollten Ihre Arbeit vereinfachen, nicht verkomplizieren."
       }
     },
     "ai": {
-      "title": "KI-Integration",
-      "description": "Nutzen Sie die Kraft der künstlichen Intelligenz, um Ihre Effizienz zu steigern.",
+      "title": "Praktische KI-Integration",
+      "description": "Sparen Sie Zeit mit KI-Werkzeugen, die Routineaufgaben für Sie erledigen.",
       "features": {
-        "one": "KI-Bereitschaftsbewertung",
-        "two": "Entwicklung maßgeschneiderter KI-Lösungen",
-        "three": "KI-Training & Implementierung"
+        "one": "Einfache Wege zur Automatisierung wiederkehrender Arbeiten",
+        "two": "KI-Werkzeuge, die Ihrem Team helfen, produktiver zu sein",
+        "three": "Praktische Anwendungen ohne technische Komplexität"
       },
       "details": {
-        "intro": "Künstliche Intelligenz ist nicht nur ein Hype — es ist ein echtes Werkzeug, das Sie heute nutzen können, um Zeit zu sparen und die Produktivität zu steigern.",
-        "para1": "Ich helfe Unternehmen, praktische, realitätsnahe Nutzungsmöglichkeiten von KI zu erkunden, die auf ihre tägliche Arbeit zugeschnitten sind. Das kann Folgendes umfassen:",
+        "intro": "KI muss nicht kompliziert oder teuer sein. Ich helfe kleinen Unternehmen im Allgäu, praktische KI-Werkzeuge zu nutzen, um Zeit zu sparen und effizienter zu arbeiten.",
+        "para1": "Mein Ansatz konzentriert sich auf einfache, erschwingliche Wege, KI in Ihrem täglichen Geschäft einzusetzen:",
         "listItems": [
-          "Bewerten, wie KI-Tools in Ihre Arbeitsabläufe passen könnten",
-          "Ihnen zeigen, wie Sie Plattformen wie ChatGPT, Copilot oder andere KI-Assistenten effektiv nutzen",
-          "Einfache KI-gestützte Automatisierungen für wiederkehrende Aufgaben erstellen"
+          "Einrichtung von KI-Assistenten zur Bearbeitung routinemäßiger Kundenanfragen",
+          "Implementierung von Werkzeugen, die Dokumente und Daten automatisch verarbeiten",
+          "Schulung Ihres Teams zur effektiven Nutzung von KI für allgemeine Aufgaben"
         ],
-        "para2": "Ich werde keine komplexen Machine-Learning-Modelle erstellen — aber ich werde Ihnen helfen, die Kraft bestehender Tools auf eine Weise zu nutzen, die für Ihr Unternehmen sinnvoll ist.",
-        "conclusion": "KI ist keine Magie — aber mit der richtigen Anleitung kann es sich so anfühlen."
+        "para2": "Ich werde Sie nicht mit technischem Fachjargon überfordern oder komplexe Systeme vorschlagen. Stattdessen konzentriere ich mich auf unkomplizierte KI-Lösungen, die Ihrem Unternehmen sofortige Vorteile bringen.",
+        "conclusion": "Lassen Sie uns KI für die Routineaufgaben einsetzen, damit Sie sich auf das konzentrieren können, was wirklich wichtig ist."
       }
     }
   },
   "consultation": {
-    "title": "Kostenlose IT-Beratung",
-    "subtitle": "Unsicher, wo Sie anfangen sollen? Buchen Sie eine kostenlose 30-minütige Beratung mit unseren Experten.",
-    "description": "In diesem Gespräch besprechen wir Ihre Geschäftsbedürfnisse, identifizieren potenzielle Verbesserungen und schlagen nächste Schritte vor – alles ohne Verpflichtung.",
+    "title": "Kostenlose IT-Beratung erhalten",
+    "subtitle": "Lassen Sie uns bei einem Kaffee über Ihre Technologiebedürfnisse sprechen – ohne Fachjargon, ohne Verkaufsdruck.",
+    "description": "Unsicher, wo Sie anfangen sollen? Ich biete eine kostenlose 30-minütige Beratung an, um Ihre Geschäftsbedürfnisse zu verstehen und praktische nächste Schritte vorzuschlagen, die für Ihr Budget und Ihre Ziele sinnvoll sind.",
     "benefits": {
-      "title": "Was Sie erhalten:",
+      "title": "Was Sie erwarten können:",
       "items": {
-        "one": "Fachkundige Bewertung Ihrer aktuellen IT-Einrichtung",
-        "two": "Maßgeschneiderte Verbesserungsvorschläge",
-        "three": "Klarer Fahrplan für die digitale Transformation",
-        "four": "Antworten auf Ihre spezifischen Technologiefragen"
+        "one": "Eine unkomplizierte Beurteilung Ihrer aktuellen IT-Einrichtung",
+        "two": "Praktische Empfehlungen, die zu Ihrem Budget passen",
+        "three": "Klare Erklärungen ohne technischen Fachjargon",
+        "four": "Ehrlicher Rat zu dem, was Sie wirklich brauchen (und nicht brauchen)"
       }
     },
     "form": {
@@ -90,33 +94,18 @@
       "email": "Ihre E-Mail",
       "company": "Firmenname",
       "phone": "Telefonnummer (optional)",
-      "message": "Erzählen Sie uns kurz von Ihren Geschäftsbedürfnissen",
-      "submit": "Beratung vereinbaren",
-      "privacy": "Mit dem Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie zu."
+      "message": "Erzählen Sie mir kurz von Ihrem Unternehmen und wobei Sie Hilfe benötigen",
+      "submit": "Kostenlose Beratung buchen",
+      "privacy": "Ich respektiere Ihre Privatsphäre und werde Ihre Daten niemals an Dritte weitergeben."
     },
-    "success": "Vielen Dank! Wir werden Sie innerhalb eines Werktages kontaktieren, um Ihre kostenlose Beratung zu planen."
-  },
-  "contact": {
-    "title": "Kontakt aufnehmen",
-    "subtitle": "Haben Sie ein Projekt im Sinn? Lassen Sie uns besprechen, wie wir Ihrem Unternehmen beim Wachstum helfen können.",
-    "info": {
-      "title": "Kontaktinformationen",
-      "description": "Zögern Sie nicht, uns bei Fragen oder Anfragen zu kontaktieren. Wir sind hier, um zu helfen."
-    },
-    "form": {
-      "name": "Ihr Name",
-      "email": "Ihre E-Mail",
-      "message": "Ihre Nachricht",
-      "submit": "Nachricht senden"
-    },
-    "success": "Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden."
+    "success": "Vielen Dank für Ihre Anfrage! Ich werde Sie innerhalb von 24 Stunden persönlich kontaktieren, um Ihre kostenlose Beratung zu planen."
   },
   "footer": {
-    "description": "Ingio.is bietet professionelle IT-Dienstleistungen, Digitalisierungsberatung und KI-Workflow-Integration für kleine Unternehmen in Bayern.",
+    "description": "Lokaler IT-Support und unkomplizierte Technologielösungen für kleine Unternehmen in der gesamten Allgäu-Region. Mit Sitz in Bayern, betreue ich lokale Kunden mit persönlicher Aufmerksamkeit und praktischem Fachwissen.",
     "links": {
       "title": "Schnellzugriff",
       "home": "Startseite",
-      "services": "Dienstleistungen",
+      "services": "Leistungen",
       "contact": "Kontakt"
     },
     "legal": {
@@ -124,7 +113,19 @@
       "privacy": "Datenschutzrichtlinie",
       "terms": "Nutzungsbedingungen"
     },
+    "location": "Mit Sitz im Allgäu, Bayern",
+    "service_area": "Betreuung von Unternehmen in der gesamten Allgäu-Region",
     "copyright": "Alle Rechte vorbehalten."
+  },
+  "personalAbout": {
+    "title": "Lernen Sie Ihren IT-Partner kennen",
+    "subtitle": "Zuverlässige lokale Unterstützung von jemandem, der Ihre Sprache spricht",
+    "name": "Ingi Óskarsson",
+    "role": "IT-Berater & Inhaber",
+    "bio": "Mit über einem Jahrzehnt Erfahrung in IT-Infrastruktur und Unternehmenstechnologie biete ich praktische Unterstützung für kleine Unternehmen in der gesamten Allgäu-Region. Als selbstständiger Berater biete ich die persönliche Aufmerksamkeit und Flexibilität, die größere IT-Firmen nicht bieten können.",
+    "approach": "Mein Ansatz ist einfach: Ich konzentriere mich auf praktische Lösungen, die die Technologie für Sie arbeiten lassen, nicht umgekehrt. Keine unnötige Komplexität, kein technischer Fachjargon – nur zuverlässige IT, die Ihrem Unternehmen hilft, reibungslos zu laufen.",
+    "local": "Mit Sitz im Allgäu verstehe ich die einzigartigen Herausforderungen lokaler Unternehmen und biete reaktionsschnelle Unterstützung, wenn Sie sie am dringendsten benötigen.",
+    "cta": "Lassen Sie uns darüber sprechen, wie ich Ihre IT vereinfachen kann"
   },
   "Index": {
     "title": "Professionelle IT-Dienstleistungen & Beratung",

@@ -13,24 +13,81 @@ export default function ConsultationSection() {
     message: ''
   });
   
+  const [formErrors, setFormErrors] = useState({
+    name: '',
+    email: '',
+    company: '',
+    message: ''
+  });
+  
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   
+  const validateField = (name: string, value: string) => {
+    let error = '';
+    
+    switch (name) {
+      case 'name':
+        if (!value.trim()) error = 'Name is required';
+        break;
+      case 'email':
+        if (!value.trim()) {
+          error = 'Email is required';
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          error = 'Please enter a valid email address';
+        }
+        break;
+      case 'company':
+        if (!value.trim()) error = 'Company name is required';
+        break;
+      case 'message':
+        if (!value.trim()) error = 'Message is required';
+        break;
+    }
+    
+    return error;
+  };
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    
     setFormState({
       ...formState,
-      [e.target.name]: e.target.value
+      [name]: value
+    });
+    
+    // Validate on change for immediate feedback
+    setFormErrors({
+      ...formErrors,
+      [name]: validateField(name, value)
     });
   };
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate all fields before submission
+    const errors = {
+      name: validateField('name', formState.name),
+      email: validateField('email', formState.email),
+      company: validateField('company', formState.company),
+      message: validateField('message', formState.message)
+    };
+    
+    setFormErrors(errors);
+    
+    // Check if there are any errors
+    if (Object.values(errors).some(error => error)) {
+      return; // Don't submit if there are validation errors
+    }
+    
     setIsSubmitting(true);
     setSubmitError(null);
     setIsSubmitted(false); // Reset success state on new submission
 
     try {
+      // Note: Backend not implemented yet
       const response = await fetch('/api/consultation', {
         method: 'POST',
         headers: {
@@ -80,9 +137,9 @@ export default function ConsultationSection() {
   const renderForm = () => {
     if (isSubmitted) {
       return (
-        <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
+        <div className="flex flex-col items-center justify-center min-h-[300px] text-center" role="status" aria-live="polite">
           <div className="mb-4 w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
           </div>
@@ -92,50 +149,62 @@ export default function ConsultationSection() {
     }
     
     return (
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4" noValidate>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">{t('form.name')}</label>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">{t('form.name')} *</label>
             <input
               type="text"
               id="name"
               name="name"
               value={formState.name}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
+              className={`w-full rounded-md bg-gray-800 border ${formErrors.name ? 'border-red-500' : 'border-gray-700'} text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50`}
               required
               disabled={isSubmitting}
+              autoComplete="name"
+              aria-describedby={formErrors.name ? "name-error" : undefined}
+              aria-invalid={formErrors.name ? "true" : "false"}
             />
+            {formErrors.name && <p id="name-error" className="mt-1 text-sm text-red-500">{formErrors.name}</p>}
           </div>
           
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">{t('form.email')}</label>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">{t('form.email')} *</label>
             <input
               type="email"
               id="email"
               name="email"
               value={formState.email}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
+              className={`w-full rounded-md bg-gray-800 border ${formErrors.email ? 'border-red-500' : 'border-gray-700'} text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50`}
               required
               disabled={isSubmitting}
+              autoComplete="email"
+              aria-describedby={formErrors.email ? "email-error" : undefined}
+              aria-invalid={formErrors.email ? "true" : "false"}
             />
+            {formErrors.email && <p id="email-error" className="mt-1 text-sm text-red-500">{formErrors.email}</p>}
           </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-1">{t('form.company')}</label>
+            <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-1">{t('form.company')} *</label>
             <input
               type="text"
               id="company"
               name="company"
               value={formState.company}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
+              className={`w-full rounded-md bg-gray-800 border ${formErrors.company ? 'border-red-500' : 'border-gray-700'} text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50`}
               required
               disabled={isSubmitting}
+              autoComplete="organization"
+              aria-describedby={formErrors.company ? "company-error" : undefined}
+              aria-invalid={formErrors.company ? "true" : "false"}
             />
+            {formErrors.company && <p id="company-error" className="mt-1 text-sm text-red-500">{formErrors.company}</p>}
           </div>
           
           <div>
@@ -148,32 +217,41 @@ export default function ConsultationSection() {
               onChange={handleChange}
               className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
               disabled={isSubmitting}
+              autoComplete="tel"
             />
           </div>
         </div>
         
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">{t('form.message')}</label>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">{t('form.message')} *</label>
           <textarea
             id="message"
             name="message"
             rows={3}
             value={formState.message}
             onChange={handleChange}
-            className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
+            className={`w-full rounded-md bg-gray-800 border ${formErrors.message ? 'border-red-500' : 'border-gray-700'} text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50`}
             required
             disabled={isSubmitting}
+            aria-describedby={formErrors.message ? "message-error" : undefined}
+            aria-invalid={formErrors.message ? "true" : "false"}
           ></textarea>
+          {formErrors.message && <p id="message-error" className="mt-1 text-sm text-red-500">{formErrors.message}</p>}
         </div>
         
         <div>
-          <button type="submit" className="btn-primary w-full disabled:opacity-70" disabled={isSubmitting}>
+          <button 
+            type="submit" 
+            className="btn-primary w-full py-3 text-lg font-medium disabled:opacity-70" 
+            disabled={isSubmitting}
+            aria-busy={isSubmitting ? "true" : "false"}
+          >
             {isSubmitting ? 'Submitting...' : t('form.submit')}
           </button>
           {submitError && (
-              <p className="mt-2 text-sm text-red-500 text-center">{submitError}</p>
+              <p className="mt-2 text-sm text-red-500 text-center" role="alert">{submitError}</p>
           )}
-          <p className="mt-2 text-xs text-gray-500 text-center">{t('form.privacy')}</p>
+          <p className="mt-2 text-xs text-gray-500 text-center">* {t('form.privacy')}</p>
         </div>
       </form>
     );
@@ -181,7 +259,7 @@ export default function ConsultationSection() {
   
   return (
     <section id="consultation" className="section bg-gradient-to-b from-[#1a1c1e] to-[#151718]">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-3 gradient-text">{t('title')}</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">{t('subtitle')}</p>
@@ -200,27 +278,14 @@ export default function ConsultationSection() {
                     <span className="flex-shrink-0 h-6 w-6 flex items-center justify-center mr-3">
                       {benefit.icon}
                     </span>
-                    <span className="text-gray-300">{t(`benefits.items.${benefit.key}`)}</span>
+                    <span>{t(`benefits.items.${benefit.key}`)}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            
-            <div className="p-4 bg-purple-900/20 rounded-lg">
-              <div className="flex items-center">
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-purple-500/30 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-300" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9a1 1 0 00-1-1z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <p className="ml-3 text-sm text-gray-400">
-                  No strings attached. Our consultations are completely free with no obligation to purchase.
-                </p>
-              </div>
-            </div>
           </div>
           
-          <div className="card overflow-hidden relative">
+          <div className="card relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-500 to-purple-500"></div>
             {renderForm()}
           </div>

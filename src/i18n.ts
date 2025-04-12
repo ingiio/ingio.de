@@ -15,7 +15,8 @@ export const i18nConfig = {
   localePrefix
 };
 
-export default getRequestConfig(async ({locale}) => {
+export default getRequestConfig(async ({requestLocale}) => {
+  const locale = await requestLocale;
   console.log(`[i18n] getRequestConfig called with locale: '${locale}'`);
   try {
     const messages = (await import(`./messages/${locale}.json`)).default;

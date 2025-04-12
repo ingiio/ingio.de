@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // New recommended settings for Next.js 15.2.x
+  // Settings for Next.js 15.2.x
   images: {
     remotePatterns: [
       {
@@ -14,15 +14,23 @@ const nextConfig = {
         hostname: '**',
       },
     ],
-    unoptimized: true, // Required for Cloudflare Pages static exports
+    unoptimized: true, // Required for static exports
   },
   // Enable React 19 features
   reactStrictMode: true,
-  // Set output to static export for Cloudflare Pages only in production
-  // Comment this out for development mode
+  // Set output to static export for production builds
   ...(process.env.NODE_ENV === 'production' ? { output: 'export' } : {}),
-  // Disable features that don't work with static export
+  // Performance settings
   staticPageGenerationTimeout: 300,
+  // Handle Next.js 15 warnings
+  experimental: {
+    // Enable the new App Router performance improvements
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
+    // Prevent tree-shaking warnings
+    optimizePackageImports: ['next-intl']
+  },
 };
 
 // Apply the plugin

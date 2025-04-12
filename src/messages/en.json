@@ -1,88 +1,92 @@
 {
   "hero": {
-    "title": "Empowering Your IT, One Byte at a Time",
-    "subtitle": "Expert IT services, digitalization consulting, and AI workflow integration for small businesses in Bavaria.",
+    "title": "Local IT Support For Allgäu Businesses",
+    "subtitle": "Reliable, straightforward tech solutions that just work, from a local IT expert who understands your business needs.",
     "buttons": {
-      "services": "Our Services",
-      "contact": "Get in Touch"
+      "services": "My Services",
+      "contact": "Book a Free Consultation"
     }
   },
   "nav": {
     "contact": "Contact"
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "We offer a range of technology services to help your business thrive in the digital landscape.",
+    "title": "How I Can Help Your Business",
+    "subtitle": "Practical tech solutions that save you time, reduce headaches, and keep your business running smoothly.",
     "learnMore": "Learn more",
     "closeButton": "Close",
+    "indexPage": {
+      "title": "Services & Solutions",
+      "description": "Explore my range of IT services designed to help Allgäu businesses work more efficiently and securely."
+    },
     "it": {
-      "title": "IT Infrastructure",
-      "description": "Secure networking, setup, and maintenance tailored to your business needs.",
+      "title": "Worry-Free IT Support",
+      "description": "Keep your business running without technology getting in the way.",
       "features": {
-        "one": "Network Security & Management",
-        "two": "Hardware & Software Integration",
-        "three": "Proactive Maintenance & Support"
+        "one": "Fast, responsive help when something breaks",
+        "two": "Proactive maintenance to prevent problems",
+        "three": "Straightforward security that protects your business"
       },
       "details": {
-        "intro": "Whether you're running a single office or multiple sites, I can help you build and maintain a secure, efficient, and future-ready IT setup.",
-        "para1": "I support both on-site hardware (like firewalls, switches, servers, and workstations) and cloud-first environments — including modern workplace solutions using Microsoft Intune and Entra for device and identity management.",
-        "para2": "From setting up your network securely, integrating software and hardware, to proactively keeping systems healthy — I make sure your technology doesn't hold you back.",
-        "conclusion": "Let's get your foundation solid."
+        "intro": "Technology should help your business, not create more work. I provide practical IT support that keeps things simple and reliable.",
+        "para1": "Whether you need help with day-to-day issues, setting up secure systems, or making sure your data is protected and backed up, I handle the technical details so you can focus on running your business.",
+        "para2": "My approach emphasizes reliability and prevention – identifying and fixing potential problems before they impact your business operations.",
+        "conclusion": "Think of me as your personal IT department, just without the overhead costs."
       }
     },
     "digital": {
-      "title": "Digitalization",
-      "description": "Transform your business processes with modern digital solutions.",
+      "title": "Simplified Digital Tools",
+      "description": "Streamline your operations with practical digital solutions.",
       "features": {
-        "one": "Digital Strategy Consulting",
-        "two": "Cloud Migration & Management",
-        "three": "Workflow Optimization"
+        "one": "Straightforward cloud migration that makes sense for you",
+        "two": "Business tools that save time and reduce paperwork",
+        "three": "Remote work solutions that keep your team connected"
       },
       "details": {
-        "intro": "Is your business still running on old tools, cluttered workflows, or outdated systems? I help small businesses modernize and simplify operations using today's digital solutions.",
-        "listIntro": "Whether you're looking to:",
+        "intro": "Digital transformation doesn't have to be complicated. I help small businesses in the Allgäu region adopt practical digital tools that make day-to-day work easier.",
+        "listIntro": "My focus is on solutions that deliver real benefits:",
         "listItems": [
-          "Move to the cloud (email, files, apps)",
-          "Reduce manual work with better workflows",
-          "Improve how your team collaborates remotely"
+          "Moving to simple cloud systems that reduce IT headaches",
+          "Setting up digital tools that eliminate paperwork and manual processes",
+          "Creating secure ways for your team to work from anywhere"
         ],
-        "para1": "… I'll guide you through the right choices and handle the technical side.",
-        "para2": "I don't push buzzwords — I focus on what makes your business run smoother and more securely.",
-        "conclusion": "Think of it as a digital tune-up with long-term value."
+        "para1": "I start by understanding how your business works, then recommend only the tools that will genuinely improve your operations.",
+        "para2": "No unnecessary complexity and no pushing technology you don't need – just practical solutions that make your business more efficient.",
+        "conclusion": "The right digital tools should simplify your work, not complicate it."
       }
     },
     "ai": {
-      "title": "AI Integration",
-      "description": "Leverage the power of artificial intelligence to boost your efficiency.",
+      "title": "Practical AI Integration",
+      "description": "Save time with AI tools that handle routine tasks for you.",
       "features": {
-        "one": "AI Readiness Assessment",
-        "two": "Custom AI Solutions Development",
-        "three": "AI Training & Implementation"
+        "one": "Simple ways to automate repetitive work",
+        "two": "AI tools that help your team be more productive",
+        "three": "Practical applications without the technical complexity"
       },
       "details": {
-        "intro": "Artificial intelligence isn't just hype — it's a real tool you can start using today to save time and boost productivity.",
-        "para1": "I help businesses explore practical, real-world uses of AI, tailored to their daily work. This can include:",
+        "intro": "AI doesn't have to be complicated or expensive. I help small businesses in Allgäu use practical AI tools to save time and work more efficiently.",
+        "para1": "My approach focuses on simple, affordable ways to use AI in your day-to-day business:",
         "listItems": [
-          "Assessing how AI tools could fit into your workflows",
-          "Showing you how to use platforms like ChatGPT, Copilot, or other AI assistants effectively",
-          "Building simple AI-enhanced automations for repetitive tasks"
+          "Setting up AI assistants to handle routine customer questions",
+          "Implementing tools that automatically process documents and data",
+          "Training your team to use AI effectively for common tasks"
         ],
-        "para2": "I won't build complex machine learning models — but I will help you leverage the power of existing tools in a way that makes sense for your business.",
-        "conclusion": "AI isn't magic — but with the right guidance, it can feel like it."
+        "para2": "I won't overwhelm you with technical jargon or suggest complex systems. Instead, I focus on straightforward AI solutions that deliver immediate benefits to your business.",
+        "conclusion": "Let's put AI to work on the routine tasks so you can focus on what really matters."
       }
     }
   },
   "consultation": {
-    "title": "Free IT Consultation",
-    "subtitle": "Not sure where to start? Book a free 30-minute consultation with our experts.",
-    "description": "During this session, we'll discuss your business needs, identify potential improvements, and suggest next steps – all with no obligation.",
+    "title": "Get a Free IT Consultation",
+    "subtitle": "Let's talk about your technology needs over coffee – no technical jargon, no sales pressure.",
+    "description": "Not sure where to start? I offer a free 30-minute consultation to understand your business needs and suggest practical next steps that make sense for your budget and goals.",
     "benefits": {
-      "title": "What You'll Get:",
+      "title": "What to Expect:",
       "items": {
-        "one": "Expert assessment of your current IT setup",
-        "two": "Tailored recommendations for improvement",
-        "three": "Clear roadmap for digital transformation",
-        "four": "Answers to your specific technology questions"
+        "one": "A straightforward assessment of your current IT setup",
+        "two": "Practical recommendations that fit your budget",
+        "three": "Clear explanations without technical jargon",
+        "four": "Honest advice on what you actually need (and don't need)"
       }
     },
     "form": {
@@ -90,14 +94,14 @@
       "email": "Your Email",
       "company": "Company Name",
       "phone": "Phone Number (optional)",
-      "message": "Tell us briefly about your business needs",
-      "submit": "Schedule Consultation",
-      "privacy": "By submitting this form, you agree to our privacy policy."
+      "message": "Tell me briefly about your business and what you need help with",
+      "submit": "Book Your Free Consultation",
+      "privacy": "I respect your privacy and will never share your information with third parties."
     },
-    "success": "Thank you! We'll contact you within 1 business day to schedule your free consultation."
+    "success": "Thanks for reaching out! I'll contact you personally within 24 hours to schedule your free consultation."
   },
   "footer": {
-    "description": "Ingio.is provides expert IT services, digitalization consulting, and AI workflow integration for small businesses in Bavaria.",
+    "description": "Local IT support and straightforward technology solutions for small businesses throughout the Allgäu region. Based in Bavaria, serving local clients with personal attention and practical expertise.",
     "links": {
       "title": "Quick Links",
       "home": "Home",
@@ -109,6 +113,8 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     },
+    "location": "Based in Allgäu, Bavaria",
+    "service_area": "Serving businesses throughout the Allgäu region",
     "copyright": "All rights reserved."
   },
   "Index": {
@@ -403,6 +409,16 @@
   "Layout": {
     "title": "Ingio IT Services",
     "description": "Expert IT services, digitalization consulting, and AI workflow integration"
+  },
+  "personalAbout": {
+    "title": "Meet Your IT Partner",
+    "subtitle": "Dependable local support from someone who speaks your language",
+    "name": "Ingi Óskarsson",
+    "role": "IT Consultant & Owner",
+    "bio": "With over a decade of experience in IT infrastructure and business technology, I provide hands-on support to small businesses throughout the Allgäu region. As a solo consultant, I offer the personal attention and flexibility that larger IT firms can't match.",
+    "approach": "My approach is simple: I focus on practical solutions that make technology work for you, not the other way around. No unnecessary complexity, no technical jargon – just reliable IT that helps your business run smoothly.",
+    "local": "Based in Allgäu, I understand the unique challenges local businesses face and provide responsive support when you need it most.",
+    "cta": "Let's talk about how I can simplify your IT"
   }
 }
   

@@ -9,7 +9,8 @@ import { AbstractIntlMessages } from 'next-intl';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const locale = params.locale;
   const t = await getTranslations({ locale, namespace: 'Layout' });
 
   return {
@@ -25,11 +26,13 @@ export function generateStaticParams() {
 // Make this an async component to fetch server-side messages
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const locale = params.locale;
+  
   // Validate that the incoming locale is valid using a safer check
   if (!locales.some(l => l === locale)) {
     notFound();
