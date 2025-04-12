@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 export default function ConsultationSection() {
@@ -14,13 +14,8 @@ export default function ConsultationSection() {
   });
   
   const [isSubmitted, setIsSubmitted] = useState(false);
-  // Client-side only state to prevent hydration mismatch
-  const [isClient, setIsClient] = useState(false);
-  
-  // Run once on component mount (client-side only)
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormState({
@@ -29,18 +24,48 @@ export default function ConsultationSection() {
     });
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log('Consultation form submitted:', formState);
-    // Reset form
-    setFormState({ name: '', email: '', company: '', phone: '', message: '' });
-    // Show success message
-    setIsSubmitted(true);
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-    }, 5000);
+    setIsSubmitting(true);
+    setSubmitError(null);
+    setIsSubmitted(false); // Reset success state on new submission
+
+    try {
+      const response = await fetch('/api/consultation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formState),
+      });
+
+      if (!response.ok) {
+        // Try to get error message from response, fallback to generic message
+        let errorMsg = `HTTP error! Status: ${response.status}`;
+        try {
+            const errorData = await response.json();
+            errorMsg = errorData.message || errorMsg;
+        } catch (jsonError) {
+            // Ignore if response body isn't valid JSON
+        }
+        throw new Error(errorMsg);
+      }
+
+      // Success
+      setIsSubmitted(true);
+      setFormState({ name: '', email: '', company: '', phone: '', message: '' }); // Clear form
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitError(error instanceof Error ? error.message : 'An unexpected error occurred.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // Benefits list
@@ -53,12 +78,6 @@ export default function ConsultationSection() {
 
   // Only render the form content when we're on the client
   const renderForm = () => {
-    if (!isClient) {
-      return <div className="min-h-[300px] flex items-center justify-center">
-        <div className="animate-pulse w-8 h-8 rounded-full bg-purple-500/20"></div>
-      </div>;
-    }
-    
     if (isSubmitted) {
       return (
         <div className="flex flex-col items-center justify-center min-h-[300px] text-center">
@@ -83,8 +102,9 @@ export default function ConsultationSection() {
               name="name"
               value={formState.name}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500"
+              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
               required
+              disabled={isSubmitting}
             />
           </div>
           
@@ -96,8 +116,9 @@ export default function ConsultationSection() {
               name="email"
               value={formState.email}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500"
+              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
               required
+              disabled={isSubmitting}
             />
           </div>
         </div>
@@ -111,8 +132,9 @@ export default function ConsultationSection() {
               name="company"
               value={formState.company}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500"
+              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
               required
+              disabled={isSubmitting}
             />
           </div>
           
@@ -124,7 +146,8 @@ export default function ConsultationSection() {
               name="phone"
               value={formState.phone}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500"
+              className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
+              disabled={isSubmitting}
             />
           </div>
         </div>
@@ -137,13 +160,19 @@ export default function ConsultationSection() {
             rows={3}
             value={formState.message}
             onChange={handleChange}
-            className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500"
+            className="w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:ring-purple-500 focus:border-purple-500 disabled:opacity-50"
             required
+            disabled={isSubmitting}
           ></textarea>
         </div>
         
         <div>
-          <button type="submit" className="btn-primary w-full">{t('form.submit')}</button>
+          <button type="submit" className="btn-primary w-full disabled:opacity-70" disabled={isSubmitting}>
+            {isSubmitting ? 'Submitting...' : t('form.submit')}
+          </button>
+          {submitError && (
+              <p className="mt-2 text-sm text-red-500 text-center">{submitError}</p>
+          )}
           <p className="mt-2 text-xs text-gray-500 text-center">{t('form.privacy')}</p>
         </div>
       </form>

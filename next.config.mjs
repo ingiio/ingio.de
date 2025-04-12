@@ -2,7 +2,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 // Configure next-intl with minimal configuration for static export
 // Fix: use string array for locales instead of object to avoid path errors
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

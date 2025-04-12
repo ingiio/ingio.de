@@ -1,17 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
-  const [isClient, setIsClient] = useState(false);
-  
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-  
+
   return (
     <section className="relative overflow-hidden bg-[#151718] pb-16 pt-24">
       {/* Gradient background */}
@@ -32,16 +26,12 @@ export default function HeroSection() {
           </p>
           
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            {isClient && (
-              <>
-                <Link href="#services" className="btn-primary">
-                  {t('buttons.services')}
-                </Link>
-                <Link href="#consultation" className="btn-outline">
-                  {t('buttons.contact')}
-                </Link>
-              </>
-            )}
+            <Link href="/#services" className="btn-primary">
+              {t('buttons.services')}
+            </Link>
+            <Link href="/#consultation" className="btn-outline">
+              {t('buttons.contact')}
+            </Link>
           </div>
         </div>
         

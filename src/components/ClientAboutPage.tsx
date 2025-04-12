@@ -1,16 +1,12 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 export default function ClientAboutPage() {
   const t = useTranslations('about');
   
   return (
-    <main>
-      <Navbar />
-      
+    <>
       <section className="section bg-gradient-to-b from-[#151718] to-[#1a1c1e]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -87,8 +83,6 @@ export default function ClientAboutPage() {
           </div>
         </div>
       </section>
-      
-      <Footer />
-    </main>
+    </>
   );
 } 

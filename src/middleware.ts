@@ -1,12 +1,9 @@
 import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale } from '@/i18n';
+import { i18nConfig } from '@/i18n';
 
 // Match all paths except ones starting with /api, /_next, etc.
 export default createMiddleware({
-  // Use string arrays for locales to avoid type issues
-  locales: ['en', 'de'],
-  defaultLocale: 'en',
-  localePrefix: 'always',
+  ...i18nConfig,
   // Disable dynamic features for static export
   localeDetection: false
 });

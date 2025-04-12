@@ -24,19 +24,19 @@ export default function Navbar() {
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
             
-            <a
-              href="#services" 
+            <Link
+              href="/#services"
               className="text-sm text-gray-300 hover:text-purple-400 transition-colors hidden md:inline-block"
             >
               {t('services')}
-            </a>
+            </Link>
             
-            <a
-              href="#consultation" 
+            <Link
+              href="/#consultation"
               className="btn-primary"
             >
               {t('contact')}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

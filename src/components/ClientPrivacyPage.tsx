@@ -1,16 +1,12 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 export default function ClientPrivacyPage() {
   const t = useTranslations('legal.privacy');
   
   return (
-    <main>
-      <Navbar />
-      
+    <>
       <section className="section bg-gradient-to-b from-[#151718] to-[#1a1c1e]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -88,8 +84,6 @@ export default function ClientPrivacyPage() {
           </div>
         </div>
       </section>
-      
-      <Footer />
-    </main>
+    </>
   );
 } 

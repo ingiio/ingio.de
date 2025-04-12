@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link, useRouter, usePathname } from '@/navigation';
-import ServiceModal from './ServiceModal';
+import ServiceContent from './ServiceContent';
+import { XMarkIcon } from '@heroicons/react/24/solid';
 
 interface ServiceItem {
   id: string;
@@ -14,62 +14,12 @@ interface ServiceItem {
   features: string[];
 }
 
-interface LocalizedItems {
-  en: string[];
-  de: string[];
-  [key: string]: string[];
-}
-
 export default function ServicesSection() {
   const t = useTranslations('services');
   const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
-  const [isClient, setIsClient] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalServiceId, setModalServiceId] = useState<string | null>(null);
+  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
   const cardRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
-  
-  useEffect(() => {
-    setIsClient(true);
-    
-    // Check if URL has a service path
-    const urlPattern = /\/services\/(it|digital|ai)$/;
-    const match = pathname.match(urlPattern);
-    
-    if (match && match[1]) {
-      const serviceId = match[1];
-      openServiceModal(serviceId);
-    }
-  }, [pathname]);
-
-  // Digital list items with language support
-  const digitalListItems: LocalizedItems = {
-    en: [
-      'Move to the cloud (email, files, apps)',
-      'Reduce manual work with better workflows',
-      'Improve how your team collaborates remotely'
-    ],
-    de: [
-      'In die Cloud umziehen (E-Mail, Dateien, Anwendungen)',
-      'Manuelle Arbeit durch bessere Workflows reduzieren',
-      'Die Remote-Zusammenarbeit Ihres Teams verbessern'
-    ]
-  };
-
-  // AI list items with language support
-  const aiListItems: LocalizedItems = {
-    en: [
-      'Assessing how AI tools could fit into your workflows',
-      'Showing you how to use platforms like ChatGPT, Copilot, or other AI assistants effectively',
-      'Building simple AI-enhanced automations for repetitive tasks'
-    ],
-    de: [
-      'Bewerten, wie KI-Tools in Ihre Arbeitsabläufe passen könnten',
-      'Ihnen zeigen, wie Sie Plattformen wie ChatGPT, Copilot oder andere KI-Assistenten effektiv nutzen',
-      'Einfache KI-gestützte Automatisierungen für wiederkehrende Aufgaben erstellen'
-    ]
-  };
+  const detailsRef = useRef<HTMLDivElement>(null);
 
   const services: ServiceItem[] = [
     {
@@ -107,41 +57,37 @@ export default function ServicesSection() {
     }
   ];
 
-  const openServiceModal = (serviceId: string) => {
-    // Update URL without full navigation
-    router.push(`/services/${serviceId}`);
-    setModalServiceId(serviceId);
-    setIsModalOpen(true);
+  const openServiceDetails = (serviceId: string) => {
+    setSelectedServiceId(serviceId);
+    setTimeout(() => {
+        detailsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
   };
 
-  const closeServiceModal = () => {
-    // Go back to the main page
-    router.back();
-    setIsModalOpen(false);
-  };
-
-  const getLocalizedItems = (items: LocalizedItems): string[] => {
-    return items[locale as keyof typeof items] || items.en;
+  const closeServiceDetails = () => {
+    setSelectedServiceId(null);
   };
 
   const renderServiceCard = (service: ServiceItem, index: number) => {
     return (
-      <motion.div 
+      <motion.div
+        layout
+        layoutId={service.id}
         key={service.id}
         ref={(el) => { cardRefs.current[service.id] = el; }}
         className="card group md:col-span-1"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ 
+        transition={{
           duration: 0.5,
           delay: index * 0.1
         }}
-        whileHover={{ 
+        whileHover={{
           y: -8,
           borderColor: 'rgba(168, 85, 247, 0.3)',
           boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
         }}
-        onClick={() => openServiceModal(service.id)}
+        onClick={() => openServiceDetails(service.id)}
         style={{ cursor: 'pointer' }}
       >
         <div className="flex items-start">
@@ -160,7 +106,7 @@ export default function ServicesSection() {
           </div>
         </div>
         
-        <ul className="space-y-2">
+        <ul className="space-y-2 relative z-10">
           {service.features.map((feature, fIndex) => (
             <li key={fIndex} className="flex items-center text-gray-400">
               <span className="h-5 w-5 rounded-full bg-emerald-900/30 flex items-center justify-center mr-3 group-hover:bg-emerald-900/50 transition-all">
@@ -180,52 +126,71 @@ export default function ServicesSection() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </div>
-        
-        {/* Hidden link for SEO and crawlers */}
-        <Link href={`/services/${service.id}`} className="hidden">
-          {t(service.title)}
-        </Link>
       </motion.div>
     );
   };
 
-  const renderServices = () => {
-    if (!isClient) {
-      return (
-        <div className="grid md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((_, i) => (
-            <div key={i} className="card animate-pulse h-[350px]"></div>
-          ))}
-        </div>
-      );
-    }
-
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-        {services.map((service, index) => renderServiceCard(service, index))}
-      </div>
-    );
-  };
-
   return (
-    <>
-      <section id="services" className="section bg-gradient-to-b from-[#1a1c1e] to-[#151718]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-3 gradient-text">{t('title')}</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">{t('subtitle')}</p>
-          </div>
-          
-          {renderServices()}
+    <section id="services" className="py-20 bg-[#151718] overflow-hidden relative">
+       {/* Optional: Background elements */}
+       <div className="absolute inset-0 opacity-10 pointer-events-none">
+         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+       </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+            <span className="gradient-text">{t('title')}</span>
+          </h2>
+          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-400">
+            {t('subtitle')}
+          </p>
         </div>
-      </section>
-      
-      {/* Service Modal */}
-      <ServiceModal 
-        isOpen={isModalOpen}
-        serviceId={modalServiceId}
-        onClose={closeServiceModal}
-      />
-    </>
+
+        {/* Conditional Rendering Logic */}
+        <AnimatePresence mode="wait">
+          {!selectedServiceId ? (
+            <motion.div
+              layout
+              key="cards"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 relative"
+            >
+              {services.map((service, index) => renderServiceCard(service, index))}
+            </motion.div>
+          ) : (
+            <motion.div
+              layout
+              layoutId={selectedServiceId}
+              key="details"
+              ref={detailsRef}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              className="relative"
+            >
+               {/* Close Button */}
+               <button
+                onClick={closeServiceDetails}
+                className="absolute top-0 right-0 mt-1 mr-1 z-20 p-2 rounded-full text-gray-400 hover:text-white hover:bg-gray-700/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 transition"
+                aria-label={t('closeButton')}
+               >
+                 <XMarkIcon className="h-6 w-6" />
+               </button>
+              {/* Render ServiceContent directly, passing the required props */}
+              <ServiceContent
+                serviceId={selectedServiceId}
+                isCompact={true}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </section>
   );
 }
