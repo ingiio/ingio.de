@@ -14,12 +14,12 @@ export default function ClientAboutPage() {
             <p className="text-gray-400 max-w-2xl mx-auto">{t('subtitle')}</p>
           </div>
           
-          {/* Mission & Vision */}
+          {/* Mission & Values */}
           <div className="card mb-12">
             <h2 className="text-2xl font-bold mb-4 gradient-text">{t('mission.title')}</h2>
             <p className="text-gray-400 mb-6">{t('mission.description')}</p>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-gray-800/30 p-6 rounded-lg border border-gray-700/50">
                 <h3 className="text-xl font-semibold mb-3 text-purple-400">{t('mission.values.title')}</h3>
                 <ul className="space-y-2">
@@ -60,25 +60,35 @@ export default function ClientAboutPage() {
             </div>
           </div>
           
-          {/* Team */}
+          {/* Expertise */}
           <div className="card">
-            <h2 className="text-2xl font-bold mb-8 gradient-text">{t('team.title')}</h2>
+            <h2 className="text-2xl font-bold mb-8 gradient-text">{t('expertise.title')}</h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              {['founder', 'tech', 'solutions'].map((member) => (
-                <div key={member} className="text-center">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-emerald-500 p-1 mx-auto mb-4">
-                    <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
+            <div className="grid md:grid-cols-1 gap-8 mb-8">
+              <div className="text-center">
+                <div className="w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-emerald-500 p-1 mx-auto mb-4">
+                  <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-white">{t(`team.${member}.name`)}</h3>
-                  <p className="text-purple-400 mb-2">{t(`team.${member}.role`)}</p>
-                  <p className="text-gray-400 text-sm">{t(`team.${member}.bio`)}</p>
                 </div>
-              ))}
+                <h3 className="text-lg font-semibold text-white">{t('expertise.experience.name')}</h3>
+                <p className="text-purple-400 mb-2">{t('expertise.experience.role')}</p>
+                <p className="text-gray-400 text-sm">{t('expertise.experience.bio')}</p>
+              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-gray-800/30 p-6 rounded-lg border border-gray-700/50">
+                <h3 className="text-xl font-semibold mb-3 text-purple-400">{t('expertise.partnerships.title')}</h3>
+                <p className="text-gray-400">{t('expertise.partnerships.description')}</p>
+              </div>
+              
+              <div className="bg-gray-800/30 p-6 rounded-lg border border-gray-700/50">
+                <h3 className="text-xl font-semibold mb-3 text-emerald-400">{t('expertise.certifications.title')}</h3>
+                <p className="text-gray-400">{t('expertise.certifications.description')}</p>
+              </div>
             </div>
           </div>
         </div>

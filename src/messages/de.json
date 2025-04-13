@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Lokaler IT-Support für Unternehmen im Allgäu",
-    "subtitle": "Zuverlässige, unkomplizierte Technologielösungen, die einfach funktionieren - von einem lokalen IT-Experten, der Ihre Unternehmensanforderungen versteht.",
+    "title": "Lokale IT-Lösungen für Unternehmen im Allgäu",
+    "subtitle": "Persönlicher IT-Support von einem Solo-Experten, der direkt mit Ihnen arbeitet - keine Mittelsmänner, nur zuverlässige Lösungen, die zu Ihren Geschäftsanforderungen passen.",
     "buttons": {
       "services": "Meine Leistungen",
       "contact": "Kostenlose Beratung buchen"
@@ -12,7 +12,7 @@
   },
   "services": {
     "title": "Wie ich Ihrem Unternehmen helfen kann",
-    "subtitle": "Praktische Technologielösungen, die Zeit sparen, Kopfschmerzen reduzieren und Ihr Unternehmen reibungslos am Laufen halten.",
+    "subtitle": "Als Ihr persönlicher IT-Partner biete ich praktische Technologielösungen mit individueller Aufmerksamkeit, die größere Firmen nicht bieten können - ich spare Ihnen Zeit und halte Ihr Unternehmen reibungslos am Laufen.",
     "learnMore": "Mehr erfahren",
     "closeButton": "Schließen",
     "indexPage": {
@@ -20,12 +20,12 @@
       "description": "Entdecken Sie meine IT-Dienstleistungen, die entwickelt wurden, um Allgäuer Unternehmen effizienter und sicherer arbeiten zu lassen."
     },
     "it": {
-      "title": "Sorgenfreier IT-Support",
-      "description": "Halten Sie Ihr Unternehmen am Laufen, ohne dass die Technologie im Weg steht.",
+      "title": "Präzises IT-Management",
+      "description": "Halten Sie Ihre Unternehmenstechnologie mit fachkundiger Unterstützung auf Höchstleistung.",
       "features": {
         "one": "Schnelle, reaktionsschnelle Hilfe bei Problemen",
         "two": "Proaktive Wartung zur Problemvermeidung",
-        "three": "Unkomplizierte Sicherheit zum Schutz Ihres Unternehmens"
+        "three": "Unternehmensfähige Sicherheit, angepasst für kleine Unternehmen"
       },
       "details": {
         "intro": "Technologie sollte Ihrem Unternehmen helfen, nicht mehr Arbeit schaffen. Ich biete praktischen IT-Support, der die Dinge einfach und zuverlässig hält.",
@@ -35,12 +35,12 @@
       }
     },
     "digital": {
-      "title": "Vereinfachte digitale Werkzeuge",
-      "description": "Optimieren Sie Ihre Abläufe mit praktischen digitalen Lösungen.",
+      "title": "Strategische digitale Lösungen",
+      "description": "Optimieren Sie Ihre Abläufe mit intelligenter Technologie, die so funktioniert, wie Sie arbeiten.",
       "features": {
-        "one": "Unkomplizierte Cloud-Migration, die für Sie sinnvoll ist",
-        "two": "Geschäftswerkzeuge, die Zeit sparen und Papierkram reduzieren",
-        "three": "Remote-Arbeitslösungen, die Ihr Team verbunden halten"
+        "one": "Intelligente Cloud-Migration, maßgeschneidert für Ihre spezifischen Anforderungen",
+        "two": "Geschäftswerkzeuge, die Papierkram beseitigen und Routineaufgaben automatisieren",
+        "three": "Remote-Arbeitsumgebungen, die die Teamproduktivität steigern"
       },
       "details": {
         "intro": "Digitale Transformation muss nicht kompliziert sein. Ich helfe kleinen Unternehmen im Allgäu, praktische digitale Werkzeuge einzusetzen, die die tägliche Arbeit erleichtern.",
@@ -56,12 +56,12 @@
       }
     },
     "ai": {
-      "title": "Praktische KI-Integration",
-      "description": "Sparen Sie Zeit mit KI-Werkzeugen, die Routineaufgaben für Sie erledigen.",
+      "title": "Intelligente Workflow-Optimierung",
+      "description": "Nutzen Sie KI-Technologie, um mit weniger Aufwand und größerer Präzision mehr zu erreichen.",
       "features": {
-        "one": "Einfache Wege zur Automatisierung wiederkehrender Arbeiten",
-        "two": "KI-Werkzeuge, die Ihrem Team helfen, produktiver zu sein",
-        "three": "Praktische Anwendungen ohne technische Komplexität"
+        "one": "Maßgeschneiderte Automatisierung für die spezifischen Routineaufgaben Ihres Unternehmens",
+        "two": "KI-gestützte Werkzeuge, die die Produktivität Ihres Teams verstärken",
+        "three": "Praktische Implementierungen, die sofortigen Mehrwert liefern"
       },
       "details": {
         "intro": "KI muss nicht kompliziert oder teuer sein. Ich helfe kleinen Unternehmen im Allgäu, praktische KI-Werkzeuge zu nutzen, um Zeit zu sparen und effizienter zu arbeiten.",
@@ -78,14 +78,14 @@
   },
   "consultation": {
     "title": "Kostenlose IT-Beratung erhalten",
-    "subtitle": "Lassen Sie uns bei einem Kaffee über Ihre Technologiebedürfnisse sprechen – ohne Fachjargon, ohne Verkaufsdruck.",
-    "description": "Unsicher, wo Sie anfangen sollen? Ich biete eine kostenlose 30-minütige Beratung an, um Ihre Geschäftsbedürfnisse zu verstehen und praktische nächste Schritte vorzuschlagen, die für Ihr Budget und Ihre Ziele sinnvoll sind.",
+    "subtitle": "Treffen Sie sich direkt mit mir, dem Inhaber, zu einem unverbindlichen Gespräch über Ihre Technologiebedürfnisse – ohne Fachjargon, ohne Verkaufsdruck.",
+    "description": "Unsicher, wo Sie anfangen sollen? Ich biete persönlich eine kostenlose 30-minütige Beratung an, um Ihre Geschäftsbedürfnisse zu verstehen und praktische nächste Schritte vorzuschlagen, die für Ihr Budget und Ihre Ziele sinnvoll sind.",
     "benefits": {
       "title": "Was Sie erwarten können:",
       "items": {
         "one": "Eine unkomplizierte Beurteilung Ihrer aktuellen IT-Einrichtung",
         "two": "Praktische Empfehlungen, die zu Ihrem Budget passen",
-        "three": "Klare Erklärungen ohne technischen Fachjargon",
+        "three": "Direkter Zugang zu mir als Ihrem engagierten IT-Partner - keine Account Manager oder Support-Stufen",
         "four": "Ehrlicher Rat zu dem, was Sie wirklich brauchen (und nicht brauchen)"
       }
     },
@@ -119,12 +119,11 @@
   },
   "personalAbout": {
     "title": "Lernen Sie Ihren IT-Partner kennen",
-    "subtitle": "Zuverlässige lokale Unterstützung von jemandem, der Ihre Sprache spricht",
+    "subtitle": "Globale Expertise, lokaler Fokus",
     "name": "Ingi Óskarsson",
     "role": "IT-Berater & Inhaber",
-    "bio": "Mit über einem Jahrzehnt Erfahrung in IT-Infrastruktur und Unternehmenstechnologie biete ich praktische Unterstützung für kleine Unternehmen in der gesamten Allgäu-Region. Als selbstständiger Berater biete ich die persönliche Aufmerksamkeit und Flexibilität, die größere IT-Firmen nicht bieten können.",
-    "approach": "Mein Ansatz ist einfach: Ich konzentriere mich auf praktische Lösungen, die die Technologie für Sie arbeiten lassen, nicht umgekehrt. Keine unnötige Komplexität, kein technischer Fachjargon – nur zuverlässige IT, die Ihrem Unternehmen hilft, reibungslos zu laufen.",
-    "local": "Mit Sitz im Allgäu verstehe ich die einzigartigen Herausforderungen lokaler Unternehmen und biete reaktionsschnelle Unterstützung, wenn Sie sie am dringendsten benötigen.",
+    "bio": "Mit Fachwissen in Netzwerkarchitektur, Sicherheit und Unternehmenstechnologie bringe ich eine globale Perspektive für lokale IT-Herausforderungen. Ursprünglich aus Island und jetzt für Unternehmen in der gesamten Allgäu-Region tätig, kombiniere ich Erfahrung auf Unternehmensebene mit einem persönlichen Service, den größere Anbieter nicht bieten können.",
+    "approach": "Mein Hintergrund umfasst Tätigkeiten bei Internet Service Providern in Island, Startups in Berlin und Bayern, sowie einem Berliner Tech-Unicorn während seiner Hyperwachstumsphase mit Zehntausenden von Nutzern. Diese vielfältige Erfahrung gibt mir eine breite Perspektive, die unschätzbar wertvoll ist, um die passendsten Lösungen für jede einzigartige Geschäftssituation zu finden. Ich habe mich bewusst für eine Einzelpraxis entschieden, um die höchsten Servicestandards für jeden Kunden zu gewährleisten. Sie werden nicht zwischen Technikern weitergereicht oder als bloßes Ticket in der Warteschlange behandelt – jedes Problem erhält meine persönliche Aufmerksamkeit und Expertise.",
     "cta": "Lassen Sie uns darüber sprechen, wie ich Ihre IT vereinfachen kann"
   },
   "Index": {
@@ -135,7 +134,7 @@
   },
   "Nav": {
     "home": "Startseite",
-    "about": "Über uns",
+    "about": "Über mich",
     "services": "Dienstleistungen",
     "contact": "Kontakt"
   },
@@ -305,6 +304,58 @@
   "Layout": {
     "title": "Ingio IT-Dienstleistungen",
     "description": "Professionelle IT-Dienstleistungen, Digitalisierungsberatung und KI-Workflow-Integration"
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Erfahren Sie mehr über meinen Ansatz, meine Erfahrung und warum ich Ingio IT Services gegründet habe",
+    "mission": {
+      "title": "Meine Mission & Werte",
+      "description": "Meine Mission ist es, kleinen Unternehmen unternehmensgerechte Technologielösungen zu bieten, die zugänglich, effizient und zukunftssicher sind. Ich bin davon überzeugt, dass jedes Unternehmen die Kraft moderner Technologie verdient, unabhängig von seiner Größe.",
+      "values": {
+        "title": "Meine Kernwerte",
+        "integrity": "Integrität in jeder Interaktion",
+        "innovation": "Ständige Innovation und Lernen",
+        "excellence": "Exzellenz in der Servicebereitstellung",
+        "collaboration": "Kooperativer Lösungsansatz"
+      },
+      "approach": {
+        "title": "Mein Ansatz",
+        "client": {
+          "title": "Kundenorientierter Fokus",
+          "description": "Ich stelle Ihre Geschäftsziele in den Mittelpunkt jeder Lösung, die ich entwerfe."
+        },
+        "tailored": {
+          "title": "Maßgeschneiderte Lösungen",
+          "description": "Ich erstelle maßgeschneiderte Strategien, die zu Ihren spezifischen Geschäftsanforderungen und Ihrem Budget passen."
+        },
+        "futureproof": {
+          "title": "Zukunftssichere Technologie",
+          "description": "Ich implementiere skalierbare Lösungen, die mit Ihrem Unternehmen wachsen."
+        }
+      }
+    },
+    "story": {
+      "title": "Meine Geschichte",
+      "part1": "Nachdem ich meine Fähigkeiten als Systemadministrator bei einem schnell wachsenden Berliner Tech-Unicorn verfeinert hatte, wo ich bei der Wartung und Optimierung von Infrastruktur half, die auf Zehntausende von Nutzern skalierte, erkannte ich eine Chance: Kleine Unternehmen in Bayern erhielten nicht die IT-Unterstützung in Unternehmensqualität, die sie brauchten, um in der heutigen digitalen Landschaft zu gedeihen.",
+      "part2": "Nach der Arbeit mit komplexen Netzwerken in mehreren Ländern bringe ich jetzt diese internationale Perspektive und technische Präzision zu lokalen Unternehmen in der gesamten Allgäu-Region, helfe ihnen, ihre Abläufe zu modernisieren, ihre Sicherheit zu stärken und neue Technologien zu nutzen.",
+      "part3": "Meine Spezialität liegt in der Überbrückung der Kluft zwischen traditionellen Geschäftsabläufen und modernster Technologie, mit besonderem Fokus auf praktische KI-Implementierung und sicherheitsorientierte digitale Transformation, die messbare Geschäftsvorteile liefert."
+    },
+    "expertise": {
+      "title": "Meine Expertise",
+      "experience": {
+        "name": "Ingi Óskarsson",
+        "role": "IT-Berater & Inhaber",
+        "bio": "Mit spezialisierter Erfahrung in Netzwerkarchitektur und Sicherheit verbinde ich die technische Präzision meines isländischen Hintergrunds mit internationaler Unternehmenserfahrung und liefere diese Expertise mit der persönlichen Aufmerksamkeit, die nur ein engagierter lokaler Berater bieten kann."
+      },
+      "partnerships": {
+        "title": "Mein Kapazitätsansatz",
+        "description": "Obwohl ich als Einzelberater tätig bin, unterhalte ich ein sorgfältig ausgewähltes Netzwerk spezialisierter Partner für Projekte, die zusätzliche Expertise oder Kapazität erfordern. Dies ermöglicht es mir, umfassende Lösungen zu liefern und gleichzeitig den persönlichen Kontakt und die Verantwortlichkeit zu wahren, die Sie verdienen."
+      },
+      "certifications": {
+        "title": "Globale Perspektive, lokaler Fokus",
+        "description": "Meine internationale Erfahrung beim Aufbau von Netzwerken in mehreren Ländern hat mich mit einem vielfältigen technischen Fachwissen ausgestattet, das ich jetzt ausschließlich für lokale Allgäuer Unternehmen einsetze. Ich investiere kontinuierlich in berufliche Weiterbildung, um sicherzustellen, dass Sie einen Service erhalten, der globalen Standards entspricht."
+      }
+    }
   }
 }
   

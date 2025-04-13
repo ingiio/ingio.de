@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Local IT Support For Allgäu Businesses",
-    "subtitle": "Reliable, straightforward tech solutions that just work, from a local IT expert who understands your business needs.",
+    "title": "Local IT Solutions For Allgäu Businesses",
+    "subtitle": "Personalized tech support from a solo IT expert who works directly with you - no middlemen, just reliable solutions that fit your business needs.",
     "buttons": {
       "services": "My Services",
       "contact": "Book a Free Consultation"
@@ -12,7 +12,7 @@
   },
   "services": {
     "title": "How I Can Help Your Business",
-    "subtitle": "Practical tech solutions that save you time, reduce headaches, and keep your business running smoothly.",
+    "subtitle": "As your dedicated IT partner, I deliver practical tech solutions with personal attention that larger firms can't match - saving you time and keeping your business running smoothly.",
     "learnMore": "Learn more",
     "closeButton": "Close",
     "indexPage": {
@@ -20,12 +20,12 @@
       "description": "Explore my range of IT services designed to help Allgäu businesses work more efficiently and securely."
     },
     "it": {
-      "title": "Worry-Free IT Support",
-      "description": "Keep your business running without technology getting in the way.",
+      "title": "Precision IT Management",
+      "description": "Keep your business technology running at peak performance with expert support.",
       "features": {
         "one": "Fast, responsive help when something breaks",
         "two": "Proactive maintenance to prevent problems",
-        "three": "Straightforward security that protects your business"
+        "three": "Enterprise-grade security adapted for small business needs"
       },
       "details": {
         "intro": "Technology should help your business, not create more work. I provide practical IT support that keeps things simple and reliable.",
@@ -35,12 +35,12 @@
       }
     },
     "digital": {
-      "title": "Simplified Digital Tools",
-      "description": "Streamline your operations with practical digital solutions.",
+      "title": "Strategic Digital Solutions",
+      "description": "Streamline your operations with smart technology that works the way you do.",
       "features": {
-        "one": "Straightforward cloud migration that makes sense for you",
-        "two": "Business tools that save time and reduce paperwork",
-        "three": "Remote work solutions that keep your team connected"
+        "one": "Intelligent cloud migration tailored to your specific needs",
+        "two": "Business tools that eliminate paperwork and automate routine tasks",
+        "three": "Remote work environments that enhance team productivity"
       },
       "details": {
         "intro": "Digital transformation doesn't have to be complicated. I help small businesses in the Allgäu region adopt practical digital tools that make day-to-day work easier.",
@@ -56,12 +56,12 @@
       }
     },
     "ai": {
-      "title": "Practical AI Integration",
-      "description": "Save time with AI tools that handle routine tasks for you.",
+      "title": "Intelligent Workflow Enhancement",
+      "description": "Harness AI technology to accomplish more with less effort and greater precision.",
       "features": {
-        "one": "Simple ways to automate repetitive work",
-        "two": "AI tools that help your team be more productive",
-        "three": "Practical applications without the technical complexity"
+        "one": "Custom automation that handles your business's specific repetitive tasks",
+        "two": "AI-powered tools that amplify your team's productivity",
+        "three": "Practical implementations that deliver immediate value"
       },
       "details": {
         "intro": "AI doesn't have to be complicated or expensive. I help small businesses in Allgäu use practical AI tools to save time and work more efficiently.",
@@ -78,14 +78,14 @@
   },
   "consultation": {
     "title": "Get a Free IT Consultation",
-    "subtitle": "Let's talk about your technology needs over coffee – no technical jargon, no sales pressure.",
-    "description": "Not sure where to start? I offer a free 30-minute consultation to understand your business needs and suggest practical next steps that make sense for your budget and goals.",
+    "subtitle": "Meet directly with me, the business owner, for a no-obligation chat about your technology needs – no technical jargon, no sales pressure.",
+    "description": "Not sure where to start? I personally offer a free 30-minute consultation to understand your business needs and suggest practical next steps that make sense for your budget and goals.",
     "benefits": {
       "title": "What to Expect:",
       "items": {
         "one": "A straightforward assessment of your current IT setup",
         "two": "Practical recommendations that fit your budget",
-        "three": "Clear explanations without technical jargon",
+        "three": "Direct access to me as your dedicated IT partner - no account managers or support tiers",
         "four": "Honest advice on what you actually need (and don't need)"
       }
     },
@@ -125,7 +125,7 @@
   },
   "Nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Me",
     "services": "Services",
     "contact": "Contact"
   },
@@ -144,56 +144,54 @@
     "terms": "Terms of Service"
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Learn about our company, mission, and the team behind Ingio IT Services",
+    "title": "About Me",
+    "subtitle": "Learn about my approach, experience, and why I started Ingio IT Services",
     "mission": {
-      "title": "Our Mission & Vision",
-      "description": "At Ingio IT Services, our mission is to empower small businesses with enterprise-grade technology solutions that are accessible, efficient, and future-proof. We believe that every business deserves the power of modern technology, regardless of size.",
+      "title": "My Mission & Values",
+      "description": "My mission is to empower small businesses with enterprise-grade technology solutions that are accessible, efficient, and future-proof. I believe that every business deserves the power of modern technology, regardless of size.",
       "values": {
-        "title": "Our Core Values",
+        "title": "My Core Values",
         "integrity": "Integrity in every interaction",
         "innovation": "Constant innovation and learning",
         "excellence": "Excellence in service delivery",
         "collaboration": "Collaborative approach to solutions"
       },
       "approach": {
-        "title": "Our Approach",
+        "title": "My Approach",
         "client": {
           "title": "Client-Centered Focus",
-          "description": "We put your business goals at the center of every solution we design."
+          "description": "I put your business goals at the center of every solution I design."
         },
         "tailored": {
           "title": "Tailored Solutions",
-          "description": "We create custom strategies that fit your specific business needs and budget."
+          "description": "I create custom strategies that fit your specific business needs and budget."
         },
         "futureproof": {
           "title": "Future-Proof Technology",
-          "description": "We implement scalable solutions that grow with your business."
+          "description": "I implement scalable solutions that grow with your business."
         }
       }
     },
     "story": {
-      "title": "Our Story",
-      "part1": "Ingio IT Services was founded in 2018 by technology enthusiasts who saw a gap in the market: small businesses in Bavaria were not receiving the level of IT support they needed to truly thrive in the digital age.",
-      "part2": "What started as a small consulting practice has grown into a comprehensive IT service provider, helping dozens of local businesses modernize their operations, secure their data, and leverage new technologies.",
-      "part3": "Today, we specialize in bridging the gap between traditional business operations and cutting-edge technology, with a particular focus on AI integration and digital transformation."
+      "title": "My Story",
+      "part1": "After honing my skills as a systems administrator at a rapidly-growing Berlin tech unicorn, where I helped maintain and optimize infrastructure that scaled to tens of thousands of users, I recognized an opportunity: small businesses in Bavaria weren't getting the enterprise-quality IT support they needed to thrive in today's digital landscape.",
+      "part2": "Having worked with complex networks across multiple countries, I now bring this international perspective and technical precision to local businesses throughout the Allgäu region, helping them modernize their operations, strengthen their security, and leverage new technologies.",
+      "part3": "My specialty lies in bridging the gap between traditional business operations and cutting-edge technology, with particular focus on practical AI implementation and security-focused digital transformation that delivers measurable business advantages."
     },
-    "team": {
-      "title": "Meet Our Team",
-      "founder": {
-        "name": "Ingi Gauti",
-        "role": "Founder & CEO",
-        "bio": "With over 15 years in IT consulting and software development, Ingi brings vision and leadership to every project."
+    "expertise": {
+      "title": "My Expertise",
+      "experience": {
+        "name": "Ingi Óskarsson",
+        "role": "IT Consultant & Owner",
+        "bio": "With specialized experience in network architecture and security, I combine the technical precision of my Icelandic background with international enterprise experience, delivering this expertise with the personal attention only a dedicated local consultant can provide."
       },
-      "tech": {
-        "name": "Maria Schmidt",
-        "role": "Technical Director",
-        "bio": "Maria's expertise in network architecture and cloud solutions ensures our technical implementations are robust and scalable."
+      "partnerships": {
+        "title": "My Approach to Capacity",
+        "description": "While I operate as a solo consultant, I maintain a carefully selected network of specialized partners for projects requiring additional expertise or capacity. This allows me to deliver comprehensive solutions while maintaining the personal touch and accountability you deserve."
       },
-      "solutions": {
-        "name": "Thomas Weber",
-        "role": "Solutions Architect",
-        "bio": "Thomas specializes in translating business needs into practical technology solutions with a focus on AI and automation."
+      "certifications": {
+        "title": "Global Perspective, Local Focus",
+        "description": "My international experience setting up networks across multiple countries has equipped me with a diverse technical skillset that I now apply exclusively to helping local Allgäu businesses. I continuously invest in professional development to ensure you receive service that meets global standards."
       }
     }
   },
@@ -412,12 +410,11 @@
   },
   "personalAbout": {
     "title": "Meet Your IT Partner",
-    "subtitle": "Dependable local support from someone who speaks your language",
+    "subtitle": "Global expertise, local focus",
     "name": "Ingi Óskarsson",
     "role": "IT Consultant & Owner",
-    "bio": "With over a decade of experience in IT infrastructure and business technology, I provide hands-on support to small businesses throughout the Allgäu region. As a solo consultant, I offer the personal attention and flexibility that larger IT firms can't match.",
-    "approach": "My approach is simple: I focus on practical solutions that make technology work for you, not the other way around. No unnecessary complexity, no technical jargon – just reliable IT that helps your business run smoothly.",
-    "local": "Based in Allgäu, I understand the unique challenges local businesses face and provide responsive support when you need it most.",
+    "bio": "With expertise in network architecture, security, and business technology, I bring a global perspective to local IT challenges. Originally from Iceland and now serving businesses throughout the Allgäu region, I combine enterprise-level experience with dedicated personal service that larger providers can't match.",
+    "approach": "My background includes working at Internet Service Providers in Iceland, startups in Berlin and Bavaria, and a Berlin-based tech unicorn during its hypergrowth phase to tens of thousands of users. This diverse experience gives me a broad perspective that's invaluable in finding the most appropriate solutions for each unique business situation. I've deliberately chosen to build a solo practice to maintain the highest service standards for each client. You won't be passed between technicians or treated as just another ticket in the queue – every issue gets my personal attention and expertise.",
     "cta": "Let's talk about how I can simplify your IT"
   }
 }

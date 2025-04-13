@@ -53,7 +53,6 @@ export default function PersonalAboutSection() {
             <div className="space-y-6 text-gray-300">
               <p>{t('bio')}</p>
               <p>{t('approach')}</p>
-              <p>{t('local')}</p>
             </div>
             
             <div className="mt-8">
